@@ -1,0 +1,174 @@
+program_id,supplier_id,quarter,start_date,end_date,program_type,goal_value,bonus_usd,division
+1,1,2024-Q1,2024-01-01,2024-03-31,Account Penetration,34,2122.88,Worldwide Wines
+2,1,2024-Q1,2024-01-01,2024-03-31,New Placements,42,7824.55,Spirits Division
+3,1,2024-Q1,2024-01-01,2024-03-31,New Placements,11,6744.71,Fairfield County
+4,2,2024-Q1,2024-01-01,2024-03-31,New Placements,16,2767.01,Spirits Division
+5,3,2024-Q1,2024-01-01,2024-03-31,New Placements,7,7807.21,Spirits Division
+6,4,2024-Q1,2024-01-01,2024-03-31,Account Penetration,72,1269.41,North Division
+7,4,2024-Q1,2024-01-01,2024-03-31,New Placements,35,4090.36,Fairfield County
+8,5,2024-Q1,2024-01-01,2024-03-31,Volume (cases),2268,7557.98,Worldwide Wines
+9,6,2024-Q1,2024-01-01,2024-03-31,Volume (cases),3482,4188.1,Spirits Division
+10,7,2024-Q1,2024-01-01,2024-03-31,Volume (cases),1442,1618.98,Spirits Division
+11,7,2024-Q1,2024-01-01,2024-03-31,New Placements,10,7954.39,North Division
+12,7,2024-Q1,2024-01-01,2024-03-31,Feature/Display,175,4970.95,Spirits Division
+13,8,2024-Q1,2024-01-01,2024-03-31,Feature/Display,135,7313.78,Fairfield County
+14,9,2024-Q1,2024-01-01,2024-03-31,Feature/Display,98,4764.72,North Division
+15,9,2024-Q1,2024-01-01,2024-03-31,Volume (cases),1902,5191.36,Fairfield County
+16,9,2024-Q1,2024-01-01,2024-03-31,Volume (cases),1486,2298.99,Spirits Division
+17,10,2024-Q1,2024-01-01,2024-03-31,Account Penetration,10,3563.88,Spirits Division
+18,11,2024-Q1,2024-01-01,2024-03-31,New Placements,7,2236.07,Fairfield County
+19,11,2024-Q1,2024-01-01,2024-03-31,Feature/Display,38,5655.39,Fairfield County
+20,12,2024-Q1,2024-01-01,2024-03-31,Account Penetration,64,1360.82,South Division
+21,12,2024-Q1,2024-01-01,2024-03-31,Account Penetration,44,6699.73,North Division
+22,12,2024-Q1,2024-01-01,2024-03-31,Volume (cases),1559,6444.71,Spirits Division
+23,13,2024-Q1,2024-01-01,2024-03-31,New Placements,33,1432.65,Fairfield County
+24,13,2024-Q1,2024-01-01,2024-03-31,Feature/Display,89,4253.54,Worldwide Wines
+25,13,2024-Q1,2024-01-01,2024-03-31,Feature/Display,40,4985.27,Worldwide Wines
+26,14,2024-Q1,2024-01-01,2024-03-31,New Placements,43,2377.76,North Division
+27,14,2024-Q1,2024-01-01,2024-03-31,Account Penetration,12,7996.79,Fairfield County
+28,14,2024-Q1,2024-01-01,2024-03-31,Volume (cases),1635,4028.76,Worldwide Wines
+29,15,2024-Q1,2024-01-01,2024-03-31,Account Penetration,65,5260.89,Worldwide Wines
+30,15,2024-Q1,2024-01-01,2024-03-31,Volume (cases),4050,3109.71,Fairfield County
+31,1,2024-Q2,2024-04-01,2024-06-30,Volume (cases),1517,2973.53,Worldwide Wines
+32,1,2024-Q2,2024-04-01,2024-06-30,New Placements,47,7588.95,Spirits Division
+33,2,2024-Q2,2024-04-01,2024-06-30,Feature/Display,42,2858.88,Fairfield County
+34,3,2024-Q2,2024-04-01,2024-06-30,Feature/Display,151,6686.95,North Division
+35,4,2024-Q2,2024-04-01,2024-06-30,Feature/Display,125,906.53,Spirits Division
+36,4,2024-Q2,2024-04-01,2024-06-30,New Placements,44,6173.32,Worldwide Wines
+37,4,2024-Q2,2024-04-01,2024-06-30,Volume (cases),1867,2502.92,South Division
+38,5,2024-Q2,2024-04-01,2024-06-30,Feature/Display,198,4135.34,North Division
+39,5,2024-Q2,2024-04-01,2024-06-30,Account Penetration,30,2830.63,North Division
+40,6,2024-Q2,2024-04-01,2024-06-30,Feature/Display,43,2185.25,North Division
+41,6,2024-Q2,2024-04-01,2024-06-30,Feature/Display,50,5357.82,South Division
+42,6,2024-Q2,2024-04-01,2024-06-30,Feature/Display,94,4316.54,Fairfield County
+43,7,2024-Q2,2024-04-01,2024-06-30,Feature/Display,140,2327.98,Spirits Division
+44,7,2024-Q2,2024-04-01,2024-06-30,Account Penetration,59,1929.58,Spirits Division
+45,8,2024-Q2,2024-04-01,2024-06-30,Account Penetration,18,2571.86,Worldwide Wines
+46,8,2024-Q2,2024-04-01,2024-06-30,New Placements,37,2503.79,North Division
+47,8,2024-Q2,2024-04-01,2024-06-30,New Placements,24,6781.07,Spirits Division
+48,9,2024-Q2,2024-04-01,2024-06-30,Feature/Display,58,3849.11,Worldwide Wines
+49,9,2024-Q2,2024-04-01,2024-06-30,New Placements,26,4639.38,Spirits Division
+50,9,2024-Q2,2024-04-01,2024-06-30,Feature/Display,136,7496.39,South Division
+51,10,2024-Q2,2024-04-01,2024-06-30,Account Penetration,59,2251.72,Worldwide Wines
+52,10,2024-Q2,2024-04-01,2024-06-30,Volume (cases),2806,6085.29,Worldwide Wines
+53,10,2024-Q2,2024-04-01,2024-06-30,Feature/Display,189,6442.95,South Division
+54,11,2024-Q2,2024-04-01,2024-06-30,Volume (cases),1234,4267.18,Spirits Division
+55,11,2024-Q2,2024-04-01,2024-06-30,New Placements,11,7056.43,Worldwide Wines
+56,12,2024-Q2,2024-04-01,2024-06-30,Feature/Display,23,5918.33,Worldwide Wines
+57,13,2024-Q2,2024-04-01,2024-06-30,Account Penetration,19,4021.18,Fairfield County
+58,13,2024-Q2,2024-04-01,2024-06-30,New Placements,44,5695.28,North Division
+59,13,2024-Q2,2024-04-01,2024-06-30,New Placements,48,6945.07,Worldwide Wines
+60,14,2024-Q2,2024-04-01,2024-06-30,Feature/Display,158,769.24,North Division
+61,14,2024-Q2,2024-04-01,2024-06-30,Account Penetration,46,7980.69,North Division
+62,15,2024-Q2,2024-04-01,2024-06-30,Volume (cases),1023,3827.59,Fairfield County
+63,15,2024-Q2,2024-04-01,2024-06-30,Volume (cases),576,2932.81,North Division
+64,1,2024-Q3,2024-07-01,2024-09-30,New Placements,28,3730.15,South Division
+65,1,2024-Q3,2024-07-01,2024-09-30,Feature/Display,164,5613.5,South Division
+66,2,2024-Q3,2024-07-01,2024-09-30,Account Penetration,20,5071.19,Worldwide Wines
+67,3,2024-Q3,2024-07-01,2024-09-30,Account Penetration,73,7346.22,South Division
+68,3,2024-Q3,2024-07-01,2024-09-30,Account Penetration,69,5284.28,Worldwide Wines
+69,3,2024-Q3,2024-07-01,2024-09-30,New Placements,47,570.48,Worldwide Wines
+70,4,2024-Q3,2024-07-01,2024-09-30,Account Penetration,19,3812.97,Fairfield County
+71,4,2024-Q3,2024-07-01,2024-09-30,New Placements,45,7715.22,Fairfield County
+72,5,2024-Q3,2024-07-01,2024-09-30,New Placements,17,7995.3,Worldwide Wines
+73,5,2024-Q3,2024-07-01,2024-09-30,Volume (cases),2143,3360.23,Fairfield County
+74,6,2024-Q3,2024-07-01,2024-09-30,New Placements,49,2714.23,Worldwide Wines
+75,6,2024-Q3,2024-07-01,2024-09-30,New Placements,5,4744.47,North Division
+76,6,2024-Q3,2024-07-01,2024-09-30,Feature/Display,93,6318.06,South Division
+77,7,2024-Q3,2024-07-01,2024-09-30,New Placements,19,5274.63,Spirits Division
+78,7,2024-Q3,2024-07-01,2024-09-30,New Placements,48,6166.83,South Division
+79,7,2024-Q3,2024-07-01,2024-09-30,Volume (cases),522,2817.0,Worldwide Wines
+80,8,2024-Q3,2024-07-01,2024-09-30,New Placements,13,1176.0,Fairfield County
+81,9,2024-Q3,2024-07-01,2024-09-30,Feature/Display,64,2005.96,Spirits Division
+82,9,2024-Q3,2024-07-01,2024-09-30,New Placements,38,4263.46,Fairfield County
+83,10,2024-Q3,2024-07-01,2024-09-30,New Placements,35,7755.38,Fairfield County
+84,11,2024-Q3,2024-07-01,2024-09-30,New Placements,12,4012.49,North Division
+85,11,2024-Q3,2024-07-01,2024-09-30,Account Penetration,38,6951.05,Worldwide Wines
+86,11,2024-Q3,2024-07-01,2024-09-30,New Placements,10,6430.11,North Division
+87,12,2024-Q3,2024-07-01,2024-09-30,Volume (cases),3925,3264.39,Fairfield County
+88,12,2024-Q3,2024-07-01,2024-09-30,Feature/Display,183,7552.19,North Division
+89,13,2024-Q3,2024-07-01,2024-09-30,Account Penetration,70,687.68,Spirits Division
+90,13,2024-Q3,2024-07-01,2024-09-30,New Placements,44,2160.25,North Division
+91,13,2024-Q3,2024-07-01,2024-09-30,Feature/Display,199,2766.43,Worldwide Wines
+92,14,2024-Q3,2024-07-01,2024-09-30,Account Penetration,15,7596.96,Fairfield County
+93,15,2024-Q3,2024-07-01,2024-09-30,Volume (cases),996,2261.0,Spirits Division
+94,15,2024-Q3,2024-07-01,2024-09-30,Account Penetration,59,3902.33,Spirits Division
+95,1,2024-Q4,2024-10-01,2024-12-31,Account Penetration,63,5411.91,Worldwide Wines
+96,1,2024-Q4,2024-10-01,2024-12-31,Feature/Display,91,745.37,Fairfield County
+97,2,2024-Q4,2024-10-01,2024-12-31,Feature/Display,133,7629.16,Fairfield County
+98,3,2024-Q4,2024-10-01,2024-12-31,New Placements,39,7262.72,Fairfield County
+99,4,2024-Q4,2024-10-01,2024-12-31,Feature/Display,90,1923.56,North Division
+100,5,2024-Q4,2024-10-01,2024-12-31,Volume (cases),1937,5312.78,Spirits Division
+101,5,2024-Q4,2024-10-01,2024-12-31,Volume (cases),614,6400.96,South Division
+102,6,2024-Q4,2024-10-01,2024-12-31,Account Penetration,18,6723.63,Spirits Division
+103,7,2024-Q4,2024-10-01,2024-12-31,Account Penetration,39,2964.2,South Division
+104,8,2024-Q4,2024-10-01,2024-12-31,Volume (cases),2471,6938.05,South Division
+105,8,2024-Q4,2024-10-01,2024-12-31,Account Penetration,79,2379.91,South Division
+106,8,2024-Q4,2024-10-01,2024-12-31,Volume (cases),411,1488.52,Fairfield County
+107,9,2024-Q4,2024-10-01,2024-12-31,New Placements,6,1806.85,North Division
+108,10,2024-Q4,2024-10-01,2024-12-31,Feature/Display,154,1352.37,North Division
+109,11,2024-Q4,2024-10-01,2024-12-31,Feature/Display,112,4349.28,North Division
+110,11,2024-Q4,2024-10-01,2024-12-31,Feature/Display,148,2161.62,Spirits Division
+111,12,2024-Q4,2024-10-01,2024-12-31,New Placements,34,5325.06,North Division
+112,13,2024-Q4,2024-10-01,2024-12-31,Feature/Display,122,3697.05,North Division
+113,14,2024-Q4,2024-10-01,2024-12-31,Feature/Display,38,7244.5,Fairfield County
+114,14,2024-Q4,2024-10-01,2024-12-31,Account Penetration,18,1446.44,Spirits Division
+115,15,2024-Q4,2024-10-01,2024-12-31,New Placements,29,7959.71,Spirits Division
+116,15,2024-Q4,2024-10-01,2024-12-31,New Placements,34,4291.63,Worldwide Wines
+117,15,2024-Q4,2024-10-01,2024-12-31,Volume (cases),1137,6895.95,Spirits Division
+118,1,2025-Q1,2025-01-01,2025-03-31,Account Penetration,65,3886.66,South Division
+119,1,2025-Q1,2025-01-01,2025-03-31,Feature/Display,106,6705.64,Worldwide Wines
+120,1,2025-Q1,2025-01-01,2025-03-31,Feature/Display,44,2844.11,Fairfield County
+121,2,2025-Q1,2025-01-01,2025-03-31,New Placements,28,7651.94,Worldwide Wines
+122,2,2025-Q1,2025-01-01,2025-03-31,Volume (cases),947,6738.29,North Division
+123,2,2025-Q1,2025-01-01,2025-03-31,Feature/Display,44,6084.42,Fairfield County
+124,3,2025-Q1,2025-01-01,2025-03-31,Volume (cases),4800,4712.63,North Division
+125,4,2025-Q1,2025-01-01,2025-03-31,New Placements,47,7558.47,Worldwide Wines
+126,4,2025-Q1,2025-01-01,2025-03-31,Volume (cases),2556,5003.08,Fairfield County
+127,5,2025-Q1,2025-01-01,2025-03-31,Account Penetration,29,5425.52,South Division
+128,6,2025-Q1,2025-01-01,2025-03-31,New Placements,40,3256.71,Fairfield County
+129,7,2025-Q1,2025-01-01,2025-03-31,Account Penetration,64,6838.66,Spirits Division
+130,7,2025-Q1,2025-01-01,2025-03-31,Volume (cases),2390,717.15,Fairfield County
+131,7,2025-Q1,2025-01-01,2025-03-31,New Placements,26,3132.68,South Division
+132,8,2025-Q1,2025-01-01,2025-03-31,Feature/Display,37,1564.06,North Division
+133,9,2025-Q1,2025-01-01,2025-03-31,Account Penetration,58,3648.74,Fairfield County
+134,10,2025-Q1,2025-01-01,2025-03-31,New Placements,24,5911.97,Spirits Division
+135,11,2025-Q1,2025-01-01,2025-03-31,Volume (cases),630,1666.85,Spirits Division
+136,11,2025-Q1,2025-01-01,2025-03-31,Volume (cases),868,2540.77,Worldwide Wines
+137,11,2025-Q1,2025-01-01,2025-03-31,Feature/Display,175,3815.33,Fairfield County
+138,12,2025-Q1,2025-01-01,2025-03-31,Volume (cases),3027,3724.35,Fairfield County
+139,13,2025-Q1,2025-01-01,2025-03-31,Feature/Display,154,5503.49,North Division
+140,13,2025-Q1,2025-01-01,2025-03-31,Account Penetration,60,7883.34,North Division
+141,13,2025-Q1,2025-01-01,2025-03-31,Volume (cases),1874,2760.65,South Division
+142,14,2025-Q1,2025-01-01,2025-03-31,New Placements,23,2960.92,North Division
+143,15,2025-Q1,2025-01-01,2025-03-31,Feature/Display,64,1468.89,Spirits Division
+144,15,2025-Q1,2025-01-01,2025-03-31,Account Penetration,74,4690.43,Fairfield County
+145,1,2025-Q2,2025-04-01,2025-06-30,Feature/Display,30,3771.65,Worldwide Wines
+146,2,2025-Q2,2025-04-01,2025-06-30,New Placements,41,3719.63,Worldwide Wines
+147,3,2025-Q2,2025-04-01,2025-06-30,Feature/Display,94,1363.8,North Division
+148,3,2025-Q2,2025-04-01,2025-06-30,New Placements,15,6509.92,Spirits Division
+149,3,2025-Q2,2025-04-01,2025-06-30,Feature/Display,196,7398.27,North Division
+150,4,2025-Q2,2025-04-01,2025-06-30,Volume (cases),2193,3767.57,Worldwide Wines
+151,4,2025-Q2,2025-04-01,2025-06-30,Volume (cases),3442,7028.93,Fairfield County
+152,5,2025-Q2,2025-04-01,2025-06-30,New Placements,15,1072.85,North Division
+153,6,2025-Q2,2025-04-01,2025-06-30,Account Penetration,54,3133.25,South Division
+154,6,2025-Q2,2025-04-01,2025-06-30,Account Penetration,23,1598.33,South Division
+155,6,2025-Q2,2025-04-01,2025-06-30,Account Penetration,29,6201.61,North Division
+156,7,2025-Q2,2025-04-01,2025-06-30,Feature/Display,138,6158.34,Spirits Division
+157,8,2025-Q2,2025-04-01,2025-06-30,New Placements,45,2871.04,Worldwide Wines
+158,8,2025-Q2,2025-04-01,2025-06-30,Volume (cases),4041,3816.56,Fairfield County
+159,9,2025-Q2,2025-04-01,2025-06-30,Volume (cases),3083,4305.03,Fairfield County
+160,9,2025-Q2,2025-04-01,2025-06-30,Feature/Display,135,782.05,Fairfield County
+161,10,2025-Q2,2025-04-01,2025-06-30,Volume (cases),939,5112.56,Spirits Division
+162,10,2025-Q2,2025-04-01,2025-06-30,Feature/Display,138,4852.47,North Division
+163,11,2025-Q2,2025-04-01,2025-06-30,Account Penetration,51,5037.54,Spirits Division
+164,11,2025-Q2,2025-04-01,2025-06-30,Account Penetration,17,3878.92,Fairfield County
+165,12,2025-Q2,2025-04-01,2025-06-30,Volume (cases),4333,5345.95,North Division
+166,12,2025-Q2,2025-04-01,2025-06-30,Account Penetration,66,7932.4,Spirits Division
+167,12,2025-Q2,2025-04-01,2025-06-30,Account Penetration,56,3296.39,Fairfield County
+168,13,2025-Q2,2025-04-01,2025-06-30,Feature/Display,106,5591.73,North Division
+169,13,2025-Q2,2025-04-01,2025-06-30,New Placements,9,2972.68,Spirits Division
+170,14,2025-Q2,2025-04-01,2025-06-30,Feature/Display,92,2389.97,Spirits Division
+171,14,2025-Q2,2025-04-01,2025-06-30,Account Penetration,52,1111.26,South Division
+172,14,2025-Q2,2025-04-01,2025-06-30,New Placements,24,7757.72,Worldwide Wines
+173,15,2025-Q2,2025-04-01,2025-06-30,Volume (cases),2736,4691.92,Fairfield County

@@ -1,0 +1,26 @@
+sku_id,product_name,supplier_id,category,sub_category,size_ml,price_per_case_usd
+1001,Robert Mondavi Cabernet Sauvignon,1,Wine,Red Wine,750,120
+1002,Kim Crawford Sauvignon Blanc,11,Wine,White Wine,750,144
+1003,Meiomi Pinot Noir,1,Wine,Red Wine,750,132
+1004,Whispering Angel Rosé,12,Wine,Rosé,750,216
+1005,La Marca Prosecco,13,Wine,Sparkling,750,156
+1006,Kendall-Jackson Chardonnay,9,Wine,White Wine,750,128
+1007,Santa Margherita Pinot Grigio,10,Wine,White Wine,750,264
+1008,Barefoot Cabernet,2,Wine,Red Wine,750,72
+1009,Cupcake Red Velvet,3,Wine,Red Wine,750,84
+1010,Dark Horse Cabernet,2,Wine,Red Wine,750,88
+2001,Grey Goose Vodka,4,Spirits,Vodka,750,300
+2002,Tito's Handmade Vodka,5,Spirits,Vodka,750,240
+2003,Jack Daniel's Old No.7,7,Spirits,Whiskey,750,264
+2004,Woodford Reserve Bourbon,7,Spirits,Bourbon,750,360
+2005,Hennessy VS Cognac,8,Spirits,Cognac,750,420
+2006,Patron Silver Tequila,15,Spirits,Tequila,750,408
+2007,Jose Cuervo Gold,14,Spirits,Tequila,750,192
+2008,Bacardi Superior Rum,6,Spirits,Rum,750,168
+2009,Jameson Irish Whiskey,4,Spirits,Whiskey,750,288
+2010,Maker's Mark Bourbon,5,Spirits,Bourbon,750,312
+2011,Casamigos Blanco Tequila,5,Spirits,Tequila,750,456
+2012,Espolon Blanco Tequila,6,Spirits,Tequila,750,240
+2013,Crown Royal Canadian Whisky,5,Spirits,Whiskey,750,276
+2014,Bulleit Bourbon,5,Spirits,Bourbon,750,300
+2015,Absolut Vodka,4,Spirits,Vodka,750,228

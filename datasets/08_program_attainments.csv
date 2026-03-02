@@ -1,0 +1,520 @@
+attainment_id,program_id,supplier_id,quarter,rep_id,rep_name,division,program_type,goal_value,actual_value,attainment_pct,status,bonus_earned_usd
+1,1,1,2024-Q1,8,Danielle Brooks,Worldwide Wines,Account Penetration,34,24.0,70.5,Behind,1496.48
+2,1,1,2024-Q1,9,Marcus Webb,Worldwide Wines,Account Penetration,34,26.9,79.1,At Risk,1679.96
+3,1,1,2024-Q1,14,Nina Castillo,Worldwide Wines,Account Penetration,34,19.1,56.1,Behind,1191.85
+4,2,1,2024-Q1,10,Christine Talbot,Spirits Division,New Placements,42,46.1,109.7,Achieved,7824.55
+5,2,1,2024-Q1,11,Derek Huang,Spirits Division,New Placements,42,30.9,73.6,Behind,5758.85
+6,2,1,2024-Q1,15,Ethan Moore,Spirits Division,New Placements,42,32.4,77.1,At Risk,6032.67
+7,3,1,2024-Q1,5,Tyler Grant,Fairfield County,New Placements,11,12.6,114.9,Achieved,6744.71
+8,3,1,2024-Q1,6,Priya Nair,Fairfield County,New Placements,11,8.5,76.8,At Risk,5182.33
+9,3,1,2024-Q1,7,Louis Ferrara,Fairfield County,New Placements,11,12.5,114.1,Achieved,6744.71
+10,4,2,2024-Q1,10,Christine Talbot,Spirits Division,New Placements,16,13.1,82.0,At Risk,2268.76
+11,4,2,2024-Q1,11,Derek Huang,Spirits Division,New Placements,16,9.5,59.2,Behind,1637.53
+12,4,2,2024-Q1,15,Ethan Moore,Spirits Division,New Placements,16,12.4,77.4,At Risk,2141.35
+13,5,3,2024-Q1,10,Christine Talbot,Spirits Division,New Placements,7,7.5,107.0,Achieved,7807.21
+14,5,3,2024-Q1,11,Derek Huang,Spirits Division,New Placements,7,5.5,78.7,At Risk,6143.51
+15,5,3,2024-Q1,15,Ethan Moore,Spirits Division,New Placements,7,5.8,82.9,At Risk,6469.57
+16,6,4,2024-Q1,1,James Caruso,North Division,Account Penetration,72,68.9,95.7,At Risk,1214.9
+17,6,4,2024-Q1,2,Maria Delgado,North Division,Account Penetration,72,56.1,77.9,At Risk,988.59
+18,6,4,2024-Q1,12,Allison Park,North Division,Account Penetration,72,72.5,100.7,Achieved,1269.41
+19,7,4,2024-Q1,5,Tyler Grant,Fairfield County,New Placements,35,39.7,113.4,Achieved,4090.36
+20,7,4,2024-Q1,6,Priya Nair,Fairfield County,New Placements,35,34.2,97.8,At Risk,4001.34
+21,7,4,2024-Q1,7,Louis Ferrara,Fairfield County,New Placements,35,29.9,85.6,At Risk,3499.92
+22,8,5,2024-Q1,8,Danielle Brooks,Worldwide Wines,Volume (cases),2268,2054.0,90.6,At Risk,6844.86
+23,8,5,2024-Q1,9,Marcus Webb,Worldwide Wines,Volume (cases),2268,1895.0,83.6,At Risk,6315.05
+24,8,5,2024-Q1,14,Nina Castillo,Worldwide Wines,Volume (cases),2268,1810.6,79.8,At Risk,6033.63
+25,9,6,2024-Q1,10,Christine Talbot,Spirits Division,Volume (cases),3482,3926.5,112.8,Achieved,4188.1
+26,9,6,2024-Q1,11,Derek Huang,Spirits Division,Volume (cases),3482,4515.3,129.7,Achieved,4188.1
+27,9,6,2024-Q1,15,Ethan Moore,Spirits Division,Volume (cases),3482,2384.3,68.5,Behind,2867.85
+28,10,7,2024-Q1,10,Christine Talbot,Spirits Division,Volume (cases),1442,1297.2,90.0,At Risk,1456.4
+29,10,7,2024-Q1,11,Derek Huang,Spirits Division,Volume (cases),1442,1113.9,77.2,At Risk,1250.64
+30,10,7,2024-Q1,15,Ethan Moore,Spirits Division,Volume (cases),1442,1678.8,116.4,Achieved,1618.98
+31,11,7,2024-Q1,1,James Caruso,North Division,New Placements,10,6.9,68.6,Behind,5458.04
+32,11,7,2024-Q1,2,Maria Delgado,North Division,New Placements,10,9.8,97.9,At Risk,7785.57
+33,11,7,2024-Q1,12,Allison Park,North Division,New Placements,10,13.5,135.4,Achieved,7954.39
+34,12,7,2024-Q1,10,Christine Talbot,Spirits Division,Feature/Display,175,160.9,91.9,At Risk,4569.04
+35,12,7,2024-Q1,11,Derek Huang,Spirits Division,Feature/Display,175,156.6,89.5,At Risk,4448.85
+36,12,7,2024-Q1,15,Ethan Moore,Spirits Division,Feature/Display,175,115.3,65.9,Behind,3275.86
+37,13,8,2024-Q1,5,Tyler Grant,Fairfield County,Feature/Display,135,101.0,74.8,Behind,5470.72
+38,13,8,2024-Q1,6,Priya Nair,Fairfield County,Feature/Display,135,108.2,80.2,At Risk,5863.56
+39,13,8,2024-Q1,7,Louis Ferrara,Fairfield County,Feature/Display,135,126.9,94.0,At Risk,6873.18
+40,14,9,2024-Q1,1,James Caruso,North Division,Feature/Display,98,101.8,103.8,Achieved,4764.72
+41,14,9,2024-Q1,2,Maria Delgado,North Division,Feature/Display,98,117.7,120.1,Achieved,4764.72
+42,14,9,2024-Q1,12,Allison Park,North Division,Feature/Display,98,102.4,104.5,Achieved,4764.72
+43,15,9,2024-Q1,5,Tyler Grant,Fairfield County,Volume (cases),1902,1963.9,103.3,Achieved,5191.36
+44,15,9,2024-Q1,6,Priya Nair,Fairfield County,Volume (cases),1902,1198.6,63.0,Behind,3271.42
+45,15,9,2024-Q1,7,Louis Ferrara,Fairfield County,Volume (cases),1902,1036.0,54.5,Behind,2827.65
+46,16,9,2024-Q1,10,Christine Talbot,Spirits Division,Volume (cases),1486,1228.5,82.7,At Risk,1900.56
+47,16,9,2024-Q1,11,Derek Huang,Spirits Division,Volume (cases),1486,1698.6,114.3,Achieved,2298.99
+48,16,9,2024-Q1,15,Ethan Moore,Spirits Division,Volume (cases),1486,1607.6,108.2,Achieved,2298.99
+49,17,10,2024-Q1,10,Christine Talbot,Spirits Division,Account Penetration,10,10.9,109.2,Achieved,3563.88
+50,17,10,2024-Q1,11,Derek Huang,Spirits Division,Account Penetration,10,12.3,123.1,Achieved,3563.88
+51,17,10,2024-Q1,15,Ethan Moore,Spirits Division,Account Penetration,10,9.9,98.6,At Risk,3514.52
+52,18,11,2024-Q1,5,Tyler Grant,Fairfield County,New Placements,7,5.5,78.3,At Risk,1751.5
+53,18,11,2024-Q1,6,Priya Nair,Fairfield County,New Placements,7,9.1,129.5,Achieved,2236.07
+54,18,11,2024-Q1,7,Louis Ferrara,Fairfield County,New Placements,7,6.4,90.9,At Risk,2033.13
+55,19,11,2024-Q1,5,Tyler Grant,Fairfield County,Feature/Display,38,33.9,89.2,At Risk,5045.83
+56,19,11,2024-Q1,6,Priya Nair,Fairfield County,Feature/Display,38,37.1,97.7,At Risk,5525.29
+57,19,11,2024-Q1,7,Louis Ferrara,Fairfield County,Feature/Display,38,21.1,55.5,Behind,3136.27
+58,20,12,2024-Q1,3,Kevin O'Brien,South Division,Account Penetration,64,71.6,111.8,Achieved,1360.82
+59,20,12,2024-Q1,4,Sandra Moss,South Division,Account Penetration,64,43.2,67.5,Behind,918.64
+60,20,12,2024-Q1,13,Robert Vance,South Division,Account Penetration,64,64.8,101.2,Achieved,1360.82
+61,21,12,2024-Q1,1,James Caruso,North Division,Account Penetration,44,57.9,131.5,Achieved,6699.73
+62,21,12,2024-Q1,2,Maria Delgado,North Division,Account Penetration,44,38.7,88.0,At Risk,5893.35
+63,21,12,2024-Q1,12,Allison Park,North Division,Account Penetration,44,51.0,116.0,Achieved,6699.73
+64,22,12,2024-Q1,10,Christine Talbot,Spirits Division,Volume (cases),1559,974.1,62.5,Behind,4026.85
+65,22,12,2024-Q1,11,Derek Huang,Spirits Division,Volume (cases),1559,1818.9,116.7,Achieved,6444.71
+66,22,12,2024-Q1,15,Ethan Moore,Spirits Division,Volume (cases),1559,1240.7,79.6,At Risk,5129.0
+67,23,13,2024-Q1,5,Tyler Grant,Fairfield County,New Placements,33,27.9,84.7,At Risk,1213.07
+68,23,13,2024-Q1,6,Priya Nair,Fairfield County,New Placements,33,34.6,104.9,Achieved,1432.65
+69,23,13,2024-Q1,7,Louis Ferrara,Fairfield County,New Placements,33,24.6,74.5,Behind,1067.76
+70,24,13,2024-Q1,8,Danielle Brooks,Worldwide Wines,Feature/Display,89,74.9,84.1,At Risk,3579.21
+71,24,13,2024-Q1,9,Marcus Webb,Worldwide Wines,Feature/Display,89,92.9,104.3,Achieved,4253.54
+72,24,13,2024-Q1,14,Nina Castillo,Worldwide Wines,Feature/Display,89,72.6,81.6,At Risk,3470.44
+73,25,13,2024-Q1,8,Danielle Brooks,Worldwide Wines,Feature/Display,40,48.5,121.2,Achieved,4985.27
+74,25,13,2024-Q1,9,Marcus Webb,Worldwide Wines,Feature/Display,40,25.5,63.8,Behind,3178.95
+75,25,13,2024-Q1,14,Nina Castillo,Worldwide Wines,Feature/Display,40,18.6,46.5,Behind,2316.83
+76,26,14,2024-Q1,1,James Caruso,North Division,New Placements,43,29.0,67.4,Behind,1602.1
+77,26,14,2024-Q1,2,Maria Delgado,North Division,New Placements,43,41.0,95.4,At Risk,2267.96
+78,26,14,2024-Q1,12,Allison Park,North Division,New Placements,43,31.0,72.0,Behind,1711.44
+79,27,14,2024-Q1,5,Tyler Grant,Fairfield County,Account Penetration,12,15.2,126.6,Achieved,7996.79
+80,27,14,2024-Q1,6,Priya Nair,Fairfield County,Account Penetration,12,10.0,83.6,At Risk,6688.49
+81,27,14,2024-Q1,7,Louis Ferrara,Fairfield County,Account Penetration,12,10.8,89.7,At Risk,7172.93
+82,28,14,2024-Q1,8,Danielle Brooks,Worldwide Wines,Volume (cases),1635,2313.7,141.5,Achieved,4028.76
+83,28,14,2024-Q1,9,Marcus Webb,Worldwide Wines,Volume (cases),1635,1139.6,69.7,Behind,2808.12
+84,28,14,2024-Q1,14,Nina Castillo,Worldwide Wines,Volume (cases),1635,1847.4,113.0,Achieved,4028.76
+85,29,15,2024-Q1,8,Danielle Brooks,Worldwide Wines,Account Penetration,65,43.0,66.2,Behind,3482.83
+86,29,15,2024-Q1,9,Marcus Webb,Worldwide Wines,Account Penetration,65,66.3,102.0,Achieved,5260.89
+87,29,15,2024-Q1,14,Nina Castillo,Worldwide Wines,Account Penetration,65,43.2,66.5,Behind,3497.79
+88,30,15,2024-Q1,5,Tyler Grant,Fairfield County,Volume (cases),4050,1856.9,45.9,Behind,1425.8
+89,30,15,2024-Q1,6,Priya Nair,Fairfield County,Volume (cases),4050,2902.9,71.7,Behind,2228.95
+90,30,15,2024-Q1,7,Louis Ferrara,Fairfield County,Volume (cases),4050,3338.5,82.4,At Risk,2563.4
+91,31,1,2024-Q2,8,Danielle Brooks,Worldwide Wines,Volume (cases),1517,1368.7,90.2,At Risk,2682.81
+92,31,1,2024-Q2,9,Marcus Webb,Worldwide Wines,Volume (cases),1517,1335.7,88.0,At Risk,2618.06
+93,31,1,2024-Q2,14,Nina Castillo,Worldwide Wines,Volume (cases),1517,1335.3,88.0,At Risk,2617.44
+94,32,1,2024-Q2,10,Christine Talbot,Spirits Division,New Placements,47,46.2,98.2,At Risk,7452.3
+95,32,1,2024-Q2,11,Derek Huang,Spirits Division,New Placements,47,45.2,96.2,At Risk,7300.19
+96,32,1,2024-Q2,15,Ethan Moore,Spirits Division,New Placements,47,34.2,72.7,Behind,5516.45
+97,33,2,2024-Q2,5,Tyler Grant,Fairfield County,Feature/Display,42,49.8,118.6,Achieved,2858.88
+98,33,2,2024-Q2,6,Priya Nair,Fairfield County,Feature/Display,42,17.1,40.8,Behind,1165.7
+99,33,2,2024-Q2,7,Louis Ferrara,Fairfield County,Feature/Display,42,44.8,106.6,Achieved,2858.88
+100,34,3,2024-Q2,1,James Caruso,North Division,Feature/Display,151,147.7,97.8,At Risk,6542.71
+101,34,3,2024-Q2,2,Maria Delgado,North Division,Feature/Display,151,167.8,111.1,Achieved,6686.95
+102,34,3,2024-Q2,12,Allison Park,North Division,Feature/Display,151,207.9,137.7,Achieved,6686.95
+103,35,4,2024-Q2,10,Christine Talbot,Spirits Division,Feature/Display,125,119.7,95.8,At Risk,868.24
+104,35,4,2024-Q2,11,Derek Huang,Spirits Division,Feature/Display,125,94.8,75.9,At Risk,687.85
+105,35,4,2024-Q2,15,Ethan Moore,Spirits Division,Feature/Display,125,95.9,76.8,At Risk,695.85
+106,36,4,2024-Q2,8,Danielle Brooks,Worldwide Wines,New Placements,44,36.6,83.2,At Risk,5134.97
+107,36,4,2024-Q2,9,Marcus Webb,Worldwide Wines,New Placements,44,27.9,63.5,Behind,3917.05
+108,36,4,2024-Q2,14,Nina Castillo,Worldwide Wines,New Placements,44,40.9,93.1,At Risk,5745.01
+109,37,4,2024-Q2,3,Kevin O'Brien,South Division,Volume (cases),1867,1750.3,93.7,At Risk,2346.43
+110,37,4,2024-Q2,4,Sandra Moss,South Division,Volume (cases),1867,1523.6,81.6,At Risk,2042.61
+111,37,4,2024-Q2,13,Robert Vance,South Division,Volume (cases),1867,1583.5,84.8,At Risk,2122.88
+112,38,5,2024-Q2,1,James Caruso,North Division,Feature/Display,198,180.0,90.9,At Risk,3759.99
+113,38,5,2024-Q2,2,Maria Delgado,North Division,Feature/Display,198,146.2,73.8,Behind,3053.22
+114,38,5,2024-Q2,12,Allison Park,North Division,Feature/Display,198,172.4,87.0,At Risk,3599.64
+115,39,5,2024-Q2,1,James Caruso,North Division,Account Penetration,30,31.1,103.5,Achieved,2830.63
+116,39,5,2024-Q2,2,Maria Delgado,North Division,Account Penetration,30,22.4,74.7,Behind,2114.74
+117,39,5,2024-Q2,12,Allison Park,North Division,Account Penetration,30,28.4,94.7,At Risk,2680.22
+118,40,6,2024-Q2,1,James Caruso,North Division,Feature/Display,43,33.3,77.5,At Risk,1692.89
+119,40,6,2024-Q2,2,Maria Delgado,North Division,Feature/Display,43,46.4,107.9,Achieved,2185.25
+120,40,6,2024-Q2,12,Allison Park,North Division,Feature/Display,43,52.9,123.0,Achieved,2185.25
+121,41,6,2024-Q2,3,Kevin O'Brien,South Division,Feature/Display,50,49.8,99.6,At Risk,5335.64
+122,41,6,2024-Q2,4,Sandra Moss,South Division,Feature/Display,50,60.1,120.1,Achieved,5357.82
+123,41,6,2024-Q2,13,Robert Vance,South Division,Feature/Display,50,47.7,95.5,At Risk,5116.07
+124,42,6,2024-Q2,5,Tyler Grant,Fairfield County,Feature/Display,94,67.2,71.5,Behind,3084.42
+125,42,6,2024-Q2,6,Priya Nair,Fairfield County,Feature/Display,94,76.1,80.9,At Risk,3493.04
+126,42,6,2024-Q2,7,Louis Ferrara,Fairfield County,Feature/Display,94,50.5,53.7,Behind,2320.08
+127,43,7,2024-Q2,10,Christine Talbot,Spirits Division,Feature/Display,140,142.0,101.4,Achieved,2327.98
+128,43,7,2024-Q2,11,Derek Huang,Spirits Division,Feature/Display,140,97.6,69.7,Behind,1622.48
+129,43,7,2024-Q2,15,Ethan Moore,Spirits Division,Feature/Display,140,134.9,96.4,At Risk,2243.5
+130,44,7,2024-Q2,10,Christine Talbot,Spirits Division,Account Penetration,59,54.5,92.4,At Risk,1782.66
+131,44,7,2024-Q2,11,Derek Huang,Spirits Division,Account Penetration,59,67.3,114.0,Achieved,1929.58
+132,44,7,2024-Q2,15,Ethan Moore,Spirits Division,Account Penetration,59,50.7,85.9,At Risk,1657.49
+133,45,8,2024-Q2,8,Danielle Brooks,Worldwide Wines,Account Penetration,18,13.9,77.1,At Risk,1982.25
+134,45,8,2024-Q2,9,Marcus Webb,Worldwide Wines,Account Penetration,18,16.4,91.3,At Risk,2348.36
+135,45,8,2024-Q2,14,Nina Castillo,Worldwide Wines,Account Penetration,18,14.8,82.5,At Risk,2120.81
+136,46,8,2024-Q2,1,James Caruso,North Division,New Placements,37,44.0,118.8,Achieved,2503.79
+137,46,8,2024-Q2,2,Maria Delgado,North Division,New Placements,37,24.3,65.5,Behind,1641.02
+138,46,8,2024-Q2,12,Allison Park,North Division,New Placements,37,24.2,65.4,Behind,1636.72
+139,47,8,2024-Q2,10,Christine Talbot,Spirits Division,New Placements,24,36.2,150.8,Achieved,6781.07
+140,47,8,2024-Q2,11,Derek Huang,Spirits Division,New Placements,24,20.4,85.0,At Risk,5766.38
+141,47,8,2024-Q2,15,Ethan Moore,Spirits Division,New Placements,24,21.9,91.4,At Risk,6198.87
+142,48,9,2024-Q2,8,Danielle Brooks,Worldwide Wines,Feature/Display,58,72.3,124.7,Achieved,3849.11
+143,48,9,2024-Q2,9,Marcus Webb,Worldwide Wines,Feature/Display,58,47.1,81.1,At Risk,3123.37
+144,48,9,2024-Q2,14,Nina Castillo,Worldwide Wines,Feature/Display,58,66.8,115.1,Achieved,3849.11
+145,49,9,2024-Q2,10,Christine Talbot,Spirits Division,New Placements,26,22.4,86.3,At Risk,4005.51
+146,49,9,2024-Q2,11,Derek Huang,Spirits Division,New Placements,26,27.5,105.9,Achieved,4639.38
+147,49,9,2024-Q2,15,Ethan Moore,Spirits Division,New Placements,26,18.1,69.7,Behind,3232.36
+148,50,9,2024-Q2,3,Kevin O'Brien,South Division,Feature/Display,136,131.1,96.4,At Risk,7226.78
+149,50,9,2024-Q2,4,Sandra Moss,South Division,Feature/Display,136,130.9,96.2,At Risk,7214.62
+150,50,9,2024-Q2,13,Robert Vance,South Division,Feature/Display,136,158.2,116.3,Achieved,7496.39
+151,51,10,2024-Q2,8,Danielle Brooks,Worldwide Wines,Account Penetration,59,44.8,75.9,At Risk,1709.03
+152,51,10,2024-Q2,9,Marcus Webb,Worldwide Wines,Account Penetration,59,55.5,94.1,At Risk,2118.28
+153,51,10,2024-Q2,14,Nina Castillo,Worldwide Wines,Account Penetration,59,70.8,120.1,Achieved,2251.72
+154,52,10,2024-Q2,8,Danielle Brooks,Worldwide Wines,Volume (cases),2806,2265.8,80.7,At Risk,4913.83
+155,52,10,2024-Q2,9,Marcus Webb,Worldwide Wines,Volume (cases),2806,1949.4,69.5,Behind,4227.59
+156,52,10,2024-Q2,14,Nina Castillo,Worldwide Wines,Volume (cases),2806,1707.8,60.9,Behind,3703.55
+157,53,10,2024-Q2,3,Kevin O'Brien,South Division,Feature/Display,189,117.1,62.0,Behind,3991.66
+158,53,10,2024-Q2,4,Sandra Moss,South Division,Feature/Display,189,160.7,85.0,At Risk,5479.41
+159,53,10,2024-Q2,13,Robert Vance,South Division,Feature/Display,189,160.9,85.1,At Risk,5484.71
+160,54,11,2024-Q2,10,Christine Talbot,Spirits Division,Volume (cases),1234,890.1,72.1,Behind,3078.07
+161,54,11,2024-Q2,11,Derek Huang,Spirits Division,Volume (cases),1234,1136.0,92.1,At Risk,3928.36
+162,54,11,2024-Q2,15,Ethan Moore,Spirits Division,Volume (cases),1234,1168.9,94.7,At Risk,4042.19
+163,55,11,2024-Q2,8,Danielle Brooks,Worldwide Wines,New Placements,11,13.2,120.1,Achieved,7056.43
+164,55,11,2024-Q2,9,Marcus Webb,Worldwide Wines,New Placements,11,14.4,131.0,Achieved,7056.43
+165,55,11,2024-Q2,14,Nina Castillo,Worldwide Wines,New Placements,11,8.5,77.2,At Risk,5450.29
+166,56,12,2024-Q2,8,Danielle Brooks,Worldwide Wines,Feature/Display,23,25.4,110.3,Achieved,5918.33
+167,56,12,2024-Q2,9,Marcus Webb,Worldwide Wines,Feature/Display,23,26.7,116.1,Achieved,5918.33
+168,56,12,2024-Q2,14,Nina Castillo,Worldwide Wines,Feature/Display,23,17.0,73.8,Behind,4366.63
+169,57,13,2024-Q2,5,Tyler Grant,Fairfield County,Account Penetration,19,14.7,77.4,At Risk,3114.15
+170,57,13,2024-Q2,6,Priya Nair,Fairfield County,Account Penetration,19,14.1,74.3,Behind,2989.52
+171,57,13,2024-Q2,7,Louis Ferrara,Fairfield County,Account Penetration,19,15.9,83.5,At Risk,3359.05
+172,58,13,2024-Q2,1,James Caruso,North Division,New Placements,44,33.7,76.7,At Risk,4367.1
+173,58,13,2024-Q2,2,Maria Delgado,North Division,New Placements,44,40.6,92.2,At Risk,5249.16
+174,58,13,2024-Q2,12,Allison Park,North Division,New Placements,44,46.1,104.8,Achieved,5695.28
+175,59,13,2024-Q2,8,Danielle Brooks,Worldwide Wines,New Placements,48,51.7,107.6,Achieved,6945.07
+176,59,13,2024-Q2,9,Marcus Webb,Worldwide Wines,New Placements,48,39.1,81.6,At Risk,5664.19
+177,59,13,2024-Q2,14,Nina Castillo,Worldwide Wines,New Placements,48,44.5,92.6,At Risk,6431.62
+178,60,14,2024-Q2,1,James Caruso,North Division,Feature/Display,158,168.3,106.5,Achieved,769.24
+179,60,14,2024-Q2,2,Maria Delgado,North Division,Feature/Display,158,177.6,112.4,Achieved,769.24
+180,60,14,2024-Q2,12,Allison Park,North Division,Feature/Display,158,138.9,87.9,At Risk,676.44
+181,61,14,2024-Q2,1,James Caruso,North Division,Account Penetration,46,33.1,71.9,Behind,5740.54
+182,61,14,2024-Q2,2,Maria Delgado,North Division,Account Penetration,46,41.2,89.5,At Risk,7146.49
+183,61,14,2024-Q2,12,Allison Park,North Division,Account Penetration,46,46.5,101.1,Achieved,7980.69
+184,62,15,2024-Q2,5,Tyler Grant,Fairfield County,Volume (cases),1023,841.6,82.3,At Risk,3148.81
+185,62,15,2024-Q2,6,Priya Nair,Fairfield County,Volume (cases),1023,1077.4,105.3,Achieved,3827.59
+186,62,15,2024-Q2,7,Louis Ferrara,Fairfield County,Volume (cases),1023,944.7,92.3,At Risk,3534.72
+187,63,15,2024-Q2,1,James Caruso,North Division,Volume (cases),576,628.0,109.0,Achieved,2932.81
+188,63,15,2024-Q2,2,Maria Delgado,North Division,Volume (cases),576,332.3,57.7,Behind,1691.95
+189,63,15,2024-Q2,12,Allison Park,North Division,Volume (cases),576,326.0,56.6,Behind,1659.9
+190,64,1,2024-Q3,3,Kevin O'Brien,South Division,New Placements,28,22.3,79.6,At Risk,2969.88
+191,64,1,2024-Q3,4,Sandra Moss,South Division,New Placements,28,27.1,96.7,At Risk,3608.28
+192,64,1,2024-Q3,13,Robert Vance,South Division,New Placements,28,25.2,90.0,At Risk,3358.35
+193,65,1,2024-Q3,3,Kevin O'Brien,South Division,Feature/Display,164,183.3,111.7,Achieved,5613.5
+194,65,1,2024-Q3,4,Sandra Moss,South Division,Feature/Display,164,149.7,91.3,At Risk,5125.0
+195,65,1,2024-Q3,13,Robert Vance,South Division,Feature/Display,164,151.0,92.1,At Risk,5167.82
+196,66,2,2024-Q3,8,Danielle Brooks,Worldwide Wines,Account Penetration,20,17.6,87.9,At Risk,4459.31
+197,66,2,2024-Q3,9,Marcus Webb,Worldwide Wines,Account Penetration,20,16.6,82.9,At Risk,4202.56
+198,66,2,2024-Q3,14,Nina Castillo,Worldwide Wines,Account Penetration,20,22.9,114.5,Achieved,5071.19
+199,67,3,2024-Q3,3,Kevin O'Brien,South Division,Account Penetration,73,66.5,91.1,At Risk,6695.71
+200,67,3,2024-Q3,4,Sandra Moss,South Division,Account Penetration,73,70.3,96.3,At Risk,7073.55
+201,67,3,2024-Q3,13,Robert Vance,South Division,Account Penetration,73,67.2,92.0,At Risk,6760.01
+202,68,3,2024-Q3,8,Danielle Brooks,Worldwide Wines,Account Penetration,69,65.6,95.1,At Risk,5024.45
+203,68,3,2024-Q3,9,Marcus Webb,Worldwide Wines,Account Penetration,69,47.6,69.0,Behind,3647.07
+204,68,3,2024-Q3,14,Nina Castillo,Worldwide Wines,Account Penetration,69,67.5,97.8,At Risk,5166.74
+205,69,3,2024-Q3,8,Danielle Brooks,Worldwide Wines,New Placements,47,37.9,80.7,At Risk,460.37
+206,69,3,2024-Q3,9,Marcus Webb,Worldwide Wines,New Placements,47,46.1,98.1,At Risk,559.61
+207,69,3,2024-Q3,14,Nina Castillo,Worldwide Wines,New Placements,47,48.6,103.3,Achieved,570.48
+208,70,4,2024-Q3,5,Tyler Grant,Fairfield County,Account Penetration,19,20.5,107.6,Achieved,3812.97
+209,70,4,2024-Q3,6,Priya Nair,Fairfield County,Account Penetration,19,21.4,112.5,Achieved,3812.97
+210,70,4,2024-Q3,7,Louis Ferrara,Fairfield County,Account Penetration,19,20.1,106.0,Achieved,3812.97
+211,71,4,2024-Q3,5,Tyler Grant,Fairfield County,New Placements,45,39.5,87.9,At Risk,6778.74
+212,71,4,2024-Q3,6,Priya Nair,Fairfield County,New Placements,45,41.7,92.7,At Risk,7154.32
+213,71,4,2024-Q3,7,Louis Ferrara,Fairfield County,New Placements,45,41.7,92.6,At Risk,7143.58
+214,72,5,2024-Q3,8,Danielle Brooks,Worldwide Wines,New Placements,17,19.0,111.7,Achieved,7995.3
+215,72,5,2024-Q3,9,Marcus Webb,Worldwide Wines,New Placements,17,16.9,99.6,At Risk,7960.73
+216,72,5,2024-Q3,14,Nina Castillo,Worldwide Wines,New Placements,17,14.8,87.3,At Risk,6981.66
+217,73,5,2024-Q3,5,Tyler Grant,Fairfield County,Volume (cases),2143,1675.3,78.2,At Risk,2626.88
+218,73,5,2024-Q3,6,Priya Nair,Fairfield County,Volume (cases),2143,1695.7,79.1,At Risk,2658.82
+219,73,5,2024-Q3,7,Louis Ferrara,Fairfield County,Volume (cases),2143,2000.5,93.4,At Risk,3136.78
+220,74,6,2024-Q3,8,Danielle Brooks,Worldwide Wines,New Placements,49,44.1,90.1,At Risk,2445.43
+221,74,6,2024-Q3,9,Marcus Webb,Worldwide Wines,New Placements,49,46.6,95.2,At Risk,2583.79
+222,74,6,2024-Q3,14,Nina Castillo,Worldwide Wines,New Placements,49,44.8,91.5,At Risk,2482.31
+223,75,6,2024-Q3,1,James Caruso,North Division,New Placements,5,5.8,115.7,Achieved,4744.47
+224,75,6,2024-Q3,2,Maria Delgado,North Division,New Placements,5,3.0,59.5,Behind,2821.55
+225,75,6,2024-Q3,12,Allison Park,North Division,New Placements,5,4.3,85.5,At Risk,4054.82
+226,76,6,2024-Q3,3,Kevin O'Brien,South Division,Feature/Display,93,85.4,91.9,At Risk,5803.71
+227,76,6,2024-Q3,4,Sandra Moss,South Division,Feature/Display,93,68.6,73.8,Behind,4661.38
+228,76,6,2024-Q3,13,Robert Vance,South Division,Feature/Display,93,57.3,61.6,Behind,3889.67
+229,77,7,2024-Q3,10,Christine Talbot,Spirits Division,New Placements,19,17.2,90.3,At Risk,4763.08
+230,77,7,2024-Q3,11,Derek Huang,Spirits Division,New Placements,19,15.6,82.0,At Risk,4326.99
+231,77,7,2024-Q3,15,Ethan Moore,Spirits Division,New Placements,19,19.2,100.9,Achieved,5274.63
+232,78,7,2024-Q3,3,Kevin O'Brien,South Division,New Placements,48,38.7,80.6,At Risk,4968.21
+233,78,7,2024-Q3,4,Sandra Moss,South Division,New Placements,48,41.7,86.8,At Risk,5351.27
+234,78,7,2024-Q3,13,Robert Vance,South Division,New Placements,48,48.6,101.2,Achieved,6166.83
+235,79,7,2024-Q3,8,Danielle Brooks,Worldwide Wines,Volume (cases),522,477.1,91.4,At Risk,2574.79
+236,79,7,2024-Q3,9,Marcus Webb,Worldwide Wines,Volume (cases),522,543.3,104.1,Achieved,2817.0
+237,79,7,2024-Q3,14,Nina Castillo,Worldwide Wines,Volume (cases),522,421.7,80.8,At Risk,2275.48
+238,80,8,2024-Q3,5,Tyler Grant,Fairfield County,New Placements,13,11.0,85.0,At Risk,999.54
+239,80,8,2024-Q3,6,Priya Nair,Fairfield County,New Placements,13,8.6,65.9,Behind,775.26
+240,80,8,2024-Q3,7,Louis Ferrara,Fairfield County,New Placements,13,16.5,127.2,Achieved,1176.0
+241,81,9,2024-Q3,10,Christine Talbot,Spirits Division,Feature/Display,64,71.7,112.1,Achieved,2005.96
+242,81,9,2024-Q3,11,Derek Huang,Spirits Division,Feature/Display,64,21.6,33.7,Behind,675.5
+243,81,9,2024-Q3,15,Ethan Moore,Spirits Division,Feature/Display,64,62.6,97.8,At Risk,1962.45
+244,82,9,2024-Q3,5,Tyler Grant,Fairfield County,New Placements,38,31.3,82.4,At Risk,3511.38
+245,82,9,2024-Q3,6,Priya Nair,Fairfield County,New Placements,38,34.8,91.6,At Risk,3903.96
+246,82,9,2024-Q3,7,Louis Ferrara,Fairfield County,New Placements,38,32.0,84.3,At Risk,3592.23
+247,83,10,2024-Q3,5,Tyler Grant,Fairfield County,New Placements,35,26.7,76.3,At Risk,5917.43
+248,83,10,2024-Q3,6,Priya Nair,Fairfield County,New Placements,35,30.5,87.0,At Risk,6748.28
+249,83,10,2024-Q3,7,Louis Ferrara,Fairfield County,New Placements,35,19.5,55.7,Behind,4320.82
+250,84,11,2024-Q3,1,James Caruso,North Division,New Placements,12,14.0,117.1,Achieved,4012.49
+251,84,11,2024-Q3,2,Maria Delgado,North Division,New Placements,12,10.7,89.3,At Risk,3584.74
+252,84,11,2024-Q3,12,Allison Park,North Division,New Placements,12,11.6,96.7,At Risk,3879.18
+253,85,11,2024-Q3,8,Danielle Brooks,Worldwide Wines,Account Penetration,38,32.9,86.6,At Risk,6019.61
+254,85,11,2024-Q3,9,Marcus Webb,Worldwide Wines,Account Penetration,38,32.3,84.9,At Risk,5901.59
+255,85,11,2024-Q3,14,Nina Castillo,Worldwide Wines,Account Penetration,38,34.6,90.9,At Risk,6321.93
+256,86,11,2024-Q3,1,James Caruso,North Division,New Placements,10,10.9,109.3,Achieved,6430.11
+257,86,11,2024-Q3,2,Maria Delgado,North Division,New Placements,10,8.7,87.3,At Risk,5616.34
+258,86,11,2024-Q3,12,Allison Park,North Division,New Placements,10,4.9,48.9,Behind,3144.74
+259,87,12,2024-Q3,5,Tyler Grant,Fairfield County,Volume (cases),3925,3174.1,80.9,At Risk,2639.87
+260,87,12,2024-Q3,6,Priya Nair,Fairfield County,Volume (cases),3925,3345.8,85.2,At Risk,2782.71
+261,87,12,2024-Q3,7,Louis Ferrara,Fairfield County,Volume (cases),3925,3195.3,81.4,At Risk,2657.49
+262,88,12,2024-Q3,1,James Caruso,North Division,Feature/Display,183,117.2,64.1,Behind,4838.53
+263,88,12,2024-Q3,2,Maria Delgado,North Division,Feature/Display,183,196.8,107.5,Achieved,7552.19
+264,88,12,2024-Q3,12,Allison Park,North Division,Feature/Display,183,100.7,55.1,Behind,4157.71
+265,89,13,2024-Q3,10,Christine Talbot,Spirits Division,Account Penetration,70,33.9,48.4,Behind,333.17
+266,89,13,2024-Q3,11,Derek Huang,Spirits Division,Account Penetration,70,60.1,85.9,At Risk,590.81
+267,89,13,2024-Q3,15,Ethan Moore,Spirits Division,Account Penetration,70,76.8,109.7,Achieved,687.68
+268,90,13,2024-Q3,1,James Caruso,North Division,New Placements,44,29.2,66.3,Behind,1432.09
+269,90,13,2024-Q3,2,Maria Delgado,North Division,New Placements,44,44.0,100.1,Achieved,2160.25
+270,90,13,2024-Q3,12,Allison Park,North Division,New Placements,44,47.0,106.8,Achieved,2160.25
+271,91,13,2024-Q3,8,Danielle Brooks,Worldwide Wines,Feature/Display,199,175.8,88.3,At Risk,2443.96
+272,91,13,2024-Q3,9,Marcus Webb,Worldwide Wines,Feature/Display,199,128.2,64.4,Behind,1781.7
+273,91,13,2024-Q3,14,Nina Castillo,Worldwide Wines,Feature/Display,199,167.6,84.2,At Risk,2330.58
+274,92,14,2024-Q3,5,Tyler Grant,Fairfield County,Account Penetration,15,18.0,119.7,Achieved,7596.96
+275,92,14,2024-Q3,6,Priya Nair,Fairfield County,Account Penetration,15,19.2,127.9,Achieved,7596.96
+276,92,14,2024-Q3,7,Louis Ferrara,Fairfield County,Account Penetration,15,14.4,95.8,At Risk,7281.28
+277,93,15,2024-Q3,10,Christine Talbot,Spirits Division,Volume (cases),996,827.1,83.0,At Risk,1877.68
+278,93,15,2024-Q3,11,Derek Huang,Spirits Division,Volume (cases),996,596.5,59.9,Behind,1354.09
+279,93,15,2024-Q3,15,Ethan Moore,Spirits Division,Volume (cases),996,1134.6,113.9,Achieved,2261.0
+280,94,15,2024-Q3,10,Christine Talbot,Spirits Division,Account Penetration,59,50.4,85.4,At Risk,3334.51
+281,94,15,2024-Q3,11,Derek Huang,Spirits Division,Account Penetration,59,41.3,70.0,Behind,2729.79
+282,94,15,2024-Q3,15,Ethan Moore,Spirits Division,Account Penetration,59,50.6,85.7,At Risk,3343.72
+283,95,1,2024-Q4,8,Danielle Brooks,Worldwide Wines,Account Penetration,63,54.5,86.5,At Risk,4680.36
+284,95,1,2024-Q4,9,Marcus Webb,Worldwide Wines,Account Penetration,63,45.4,72.1,Behind,3903.49
+285,95,1,2024-Q4,14,Nina Castillo,Worldwide Wines,Account Penetration,63,36.2,57.5,Behind,3113.42
+286,96,1,2024-Q4,5,Tyler Grant,Fairfield County,Feature/Display,91,103.8,114.0,Achieved,745.37
+287,96,1,2024-Q4,6,Priya Nair,Fairfield County,Feature/Display,91,96.1,105.6,Achieved,745.37
+288,96,1,2024-Q4,7,Louis Ferrara,Fairfield County,Feature/Display,91,68.5,75.3,At Risk,561.2
+289,97,2,2024-Q4,5,Tyler Grant,Fairfield County,Feature/Display,133,142.6,107.2,Achieved,7629.16
+290,97,2,2024-Q4,6,Priya Nair,Fairfield County,Feature/Display,133,142.9,107.4,Achieved,7629.16
+291,97,2,2024-Q4,7,Louis Ferrara,Fairfield County,Feature/Display,133,144.2,108.4,Achieved,7629.16
+292,98,3,2024-Q4,5,Tyler Grant,Fairfield County,New Placements,39,23.8,61.0,Behind,4427.28
+293,98,3,2024-Q4,6,Priya Nair,Fairfield County,New Placements,39,30.1,77.2,At Risk,5605.12
+294,98,3,2024-Q4,7,Louis Ferrara,Fairfield County,New Placements,39,35.3,90.5,At Risk,6573.86
+295,99,4,2024-Q4,1,James Caruso,North Division,Feature/Display,90,63.7,70.8,Behind,1360.96
+296,99,4,2024-Q4,2,Maria Delgado,North Division,Feature/Display,90,65.9,73.2,Behind,1407.46
+297,99,4,2024-Q4,12,Allison Park,North Division,Feature/Display,90,99.9,110.9,Achieved,1923.56
+298,100,5,2024-Q4,10,Christine Talbot,Spirits Division,Volume (cases),1937,1677.0,86.6,At Risk,4599.6
+299,100,5,2024-Q4,11,Derek Huang,Spirits Division,Volume (cases),1937,1415.2,73.1,Behind,3881.65
+300,100,5,2024-Q4,15,Ethan Moore,Spirits Division,Volume (cases),1937,1634.0,84.4,At Risk,4481.78
+301,101,5,2024-Q4,3,Kevin O'Brien,South Division,Volume (cases),614,524.7,85.5,At Risk,5470.05
+302,101,5,2024-Q4,4,Sandra Moss,South Division,Volume (cases),614,535.0,87.1,At Risk,5577.24
+303,101,5,2024-Q4,13,Robert Vance,South Division,Volume (cases),614,496.7,80.9,At Risk,5178.04
+304,102,6,2024-Q4,10,Christine Talbot,Spirits Division,Account Penetration,18,20.0,110.9,Achieved,6723.63
+305,102,6,2024-Q4,11,Derek Huang,Spirits Division,Account Penetration,18,16.8,93.1,At Risk,6258.9
+306,102,6,2024-Q4,15,Ethan Moore,Spirits Division,Account Penetration,18,11.2,62.3,Behind,4186.84
+307,103,7,2024-Q4,3,Kevin O'Brien,South Division,Account Penetration,39,29.8,76.4,At Risk,2265.57
+308,103,7,2024-Q4,4,Sandra Moss,South Division,Account Penetration,39,49.2,126.1,Achieved,2964.2
+309,103,7,2024-Q4,13,Robert Vance,South Division,Account Penetration,39,24.9,63.7,Behind,1889.25
+310,104,8,2024-Q4,3,Kevin O'Brien,South Division,Volume (cases),2471,2089.7,84.6,At Risk,5867.42
+311,104,8,2024-Q4,4,Sandra Moss,South Division,Volume (cases),2471,1838.7,74.4,Behind,5162.61
+312,104,8,2024-Q4,13,Robert Vance,South Division,Volume (cases),2471,1869.9,75.7,At Risk,5250.16
+313,105,8,2024-Q4,3,Kevin O'Brien,South Division,Account Penetration,79,71.6,90.7,At Risk,2158.41
+314,105,8,2024-Q4,4,Sandra Moss,South Division,Account Penetration,79,96.3,122.0,Achieved,2379.91
+315,105,8,2024-Q4,13,Robert Vance,South Division,Account Penetration,79,86.5,109.4,Achieved,2379.91
+316,106,8,2024-Q4,5,Tyler Grant,Fairfield County,Volume (cases),411,404.0,98.3,At Risk,1463.06
+317,106,8,2024-Q4,6,Priya Nair,Fairfield County,Volume (cases),411,361.8,88.0,At Risk,1310.18
+318,106,8,2024-Q4,7,Louis Ferrara,Fairfield County,Volume (cases),411,319.6,77.8,At Risk,1157.34
+319,107,9,2024-Q4,1,James Caruso,North Division,New Placements,6,4.0,66.4,Behind,1199.19
+320,107,9,2024-Q4,2,Maria Delgado,North Division,New Placements,6,5.6,93.1,At Risk,1682.63
+321,107,9,2024-Q4,12,Allison Park,North Division,New Placements,6,5.0,82.6,At Risk,1492.88
+322,108,10,2024-Q4,1,James Caruso,North Division,Feature/Display,154,133.6,86.8,At Risk,1173.39
+323,108,10,2024-Q4,2,Maria Delgado,North Division,Feature/Display,154,119.5,77.6,At Risk,1048.97
+324,108,10,2024-Q4,12,Allison Park,North Division,Feature/Display,154,114.2,74.1,Behind,1002.63
+325,109,11,2024-Q4,1,James Caruso,North Division,Feature/Display,112,91.4,81.6,At Risk,3550.74
+326,109,11,2024-Q4,2,Maria Delgado,North Division,Feature/Display,112,102.6,91.6,At Risk,3985.04
+327,109,11,2024-Q4,12,Allison Park,North Division,Feature/Display,112,64.6,57.6,Behind,2506.75
+328,110,11,2024-Q4,10,Christine Talbot,Spirits Division,Feature/Display,148,112.6,76.1,At Risk,1644.32
+329,110,11,2024-Q4,11,Derek Huang,Spirits Division,Feature/Display,148,93.1,62.9,Behind,1360.06
+330,110,11,2024-Q4,15,Ethan Moore,Spirits Division,Feature/Display,148,156.0,105.4,Achieved,2161.62
+331,111,12,2024-Q4,1,James Caruso,North Division,New Placements,34,27.6,81.3,At Risk,4328.81
+332,111,12,2024-Q4,2,Maria Delgado,North Division,New Placements,34,31.0,91.1,At Risk,4852.09
+333,111,12,2024-Q4,12,Allison Park,North Division,New Placements,34,19.0,56.0,Behind,2982.62
+334,112,13,2024-Q4,1,James Caruso,North Division,Feature/Display,122,52.9,43.4,Behind,1604.41
+335,112,13,2024-Q4,2,Maria Delgado,North Division,Feature/Display,122,151.8,124.4,Achieved,3697.05
+336,112,13,2024-Q4,12,Allison Park,North Division,Feature/Display,122,84.0,68.8,Behind,2544.96
+337,113,14,2024-Q4,5,Tyler Grant,Fairfield County,Feature/Display,38,33.9,89.3,At Risk,6466.95
+338,113,14,2024-Q4,6,Priya Nair,Fairfield County,Feature/Display,38,26.3,69.3,Behind,5018.95
+339,113,14,2024-Q4,7,Louis Ferrara,Fairfield County,Feature/Display,38,30.1,79.3,At Risk,5746.36
+340,114,14,2024-Q4,10,Christine Talbot,Spirits Division,Account Penetration,18,18.5,102.7,Achieved,1446.44
+341,114,14,2024-Q4,11,Derek Huang,Spirits Division,Account Penetration,18,14.1,78.1,At Risk,1129.71
+342,114,14,2024-Q4,15,Ethan Moore,Spirits Division,Account Penetration,18,19.6,108.9,Achieved,1446.44
+343,115,15,2024-Q4,10,Christine Talbot,Spirits Division,New Placements,29,23.9,82.3,At Risk,6550.91
+344,115,15,2024-Q4,11,Derek Huang,Spirits Division,New Placements,29,34.6,119.2,Achieved,7959.71
+345,115,15,2024-Q4,15,Ethan Moore,Spirits Division,New Placements,29,27.2,93.8,At Risk,7466.57
+346,116,15,2024-Q4,8,Danielle Brooks,Worldwide Wines,New Placements,34,22.1,65.0,Behind,2791.1
+347,116,15,2024-Q4,9,Marcus Webb,Worldwide Wines,New Placements,34,43.0,126.5,Achieved,4291.63
+348,116,15,2024-Q4,14,Nina Castillo,Worldwide Wines,New Placements,34,34.9,102.8,Achieved,4291.63
+349,117,15,2024-Q4,10,Christine Talbot,Spirits Division,Volume (cases),1137,841.5,74.0,Behind,5103.43
+350,117,15,2024-Q4,11,Derek Huang,Spirits Division,Volume (cases),1137,636.1,55.9,Behind,3857.82
+351,117,15,2024-Q4,15,Ethan Moore,Spirits Division,Volume (cases),1137,1178.1,103.6,Achieved,6895.95
+352,118,1,2025-Q1,3,Kevin O'Brien,South Division,Account Penetration,65,68.9,106.0,Achieved,3886.66
+353,118,1,2025-Q1,4,Sandra Moss,South Division,Account Penetration,65,76.4,117.5,Achieved,3886.66
+354,118,1,2025-Q1,13,Robert Vance,South Division,Account Penetration,65,46.2,71.1,Behind,2762.47
+355,119,1,2025-Q1,8,Danielle Brooks,Worldwide Wines,Feature/Display,106,73.0,68.8,Behind,4616.28
+356,119,1,2025-Q1,9,Marcus Webb,Worldwide Wines,Feature/Display,106,102.4,96.6,At Risk,6478.1
+357,119,1,2025-Q1,14,Nina Castillo,Worldwide Wines,Feature/Display,106,84.2,79.4,At Risk,5324.31
+358,120,1,2025-Q1,5,Tyler Grant,Fairfield County,Feature/Display,44,32.7,74.3,Behind,2112.56
+359,120,1,2025-Q1,6,Priya Nair,Fairfield County,Feature/Display,44,62.0,140.8,Achieved,2844.11
+360,120,1,2025-Q1,7,Louis Ferrara,Fairfield County,Feature/Display,44,37.8,85.9,At Risk,2442.71
+361,121,2,2025-Q1,8,Danielle Brooks,Worldwide Wines,New Placements,28,28.8,103.0,Achieved,7651.94
+362,121,2,2025-Q1,9,Marcus Webb,Worldwide Wines,New Placements,28,33.8,120.6,Achieved,7651.94
+363,121,2,2025-Q1,14,Nina Castillo,Worldwide Wines,New Placements,28,24.0,85.7,At Risk,6560.17
+364,122,2,2025-Q1,1,James Caruso,North Division,Volume (cases),947,775.8,81.9,At Risk,5520.15
+365,122,2,2025-Q1,2,Maria Delgado,North Division,Volume (cases),947,1048.3,110.7,Achieved,6738.29
+366,122,2,2025-Q1,12,Allison Park,North Division,Volume (cases),947,913.1,96.4,At Risk,6497.26
+367,123,2,2025-Q1,5,Tyler Grant,Fairfield County,Feature/Display,44,47.1,107.2,Achieved,6084.42
+368,123,2,2025-Q1,6,Priya Nair,Fairfield County,Feature/Display,44,43.9,99.7,At Risk,6065.33
+369,123,2,2025-Q1,7,Louis Ferrara,Fairfield County,Feature/Display,44,46.9,106.5,Achieved,6084.42
+370,124,3,2025-Q1,1,James Caruso,North Division,Volume (cases),4800,2819.7,58.7,Behind,2768.42
+371,124,3,2025-Q1,2,Maria Delgado,North Division,Volume (cases),4800,4863.2,101.3,Achieved,4712.63
+372,124,3,2025-Q1,12,Allison Park,North Division,Volume (cases),4800,4349.1,90.6,At Risk,4269.95
+373,125,4,2025-Q1,8,Danielle Brooks,Worldwide Wines,New Placements,47,32.9,70.1,Behind,5298.88
+374,125,4,2025-Q1,9,Marcus Webb,Worldwide Wines,New Placements,47,32.8,69.8,Behind,5274.46
+375,125,4,2025-Q1,14,Nina Castillo,Worldwide Wines,New Placements,47,35.9,76.3,At Risk,5769.36
+376,126,4,2025-Q1,5,Tyler Grant,Fairfield County,Volume (cases),2556,2454.1,96.0,At Risk,4803.67
+377,126,4,2025-Q1,6,Priya Nair,Fairfield County,Volume (cases),2556,2218.0,86.8,At Risk,4341.43
+378,126,4,2025-Q1,7,Louis Ferrara,Fairfield County,Volume (cases),2556,1999.3,78.2,At Risk,3913.46
+379,127,5,2025-Q1,3,Kevin O'Brien,South Division,Account Penetration,29,26.0,89.7,At Risk,4864.15
+380,127,5,2025-Q1,4,Sandra Moss,South Division,Account Penetration,29,22.8,78.7,At Risk,4270.85
+381,127,5,2025-Q1,13,Robert Vance,South Division,Account Penetration,29,16.5,56.9,Behind,3085.03
+382,128,6,2025-Q1,5,Tyler Grant,Fairfield County,New Placements,40,35.6,89.1,At Risk,2901.47
+383,128,6,2025-Q1,6,Priya Nair,Fairfield County,New Placements,40,34.1,85.2,At Risk,2773.14
+384,128,6,2025-Q1,7,Louis Ferrara,Fairfield County,New Placements,40,24.1,60.2,Behind,1960.92
+385,129,7,2025-Q1,10,Christine Talbot,Spirits Division,Account Penetration,64,55.6,86.8,At Risk,5936.14
+386,129,7,2025-Q1,11,Derek Huang,Spirits Division,Account Penetration,64,64.3,100.5,Achieved,6838.66
+387,129,7,2025-Q1,15,Ethan Moore,Spirits Division,Account Penetration,64,49.1,76.7,At Risk,5244.43
+388,130,7,2025-Q1,5,Tyler Grant,Fairfield County,Volume (cases),2390,2436.6,101.9,Achieved,717.15
+389,130,7,2025-Q1,6,Priya Nair,Fairfield County,Volume (cases),2390,2510.4,105.0,Achieved,717.15
+390,130,7,2025-Q1,7,Louis Ferrara,Fairfield County,Volume (cases),2390,1832.4,76.7,At Risk,549.83
+391,131,7,2025-Q1,3,Kevin O'Brien,South Division,New Placements,26,24.2,93.3,At Risk,2921.59
+392,131,7,2025-Q1,4,Sandra Moss,South Division,New Placements,26,27.3,105.1,Achieved,3132.68
+393,131,7,2025-Q1,13,Robert Vance,South Division,New Placements,26,22.5,86.4,At Risk,2706.25
+394,132,8,2025-Q1,1,James Caruso,North Division,Feature/Display,37,36.9,99.8,At Risk,1560.48
+395,132,8,2025-Q1,2,Maria Delgado,North Division,Feature/Display,37,34.5,93.3,At Risk,1459.32
+396,132,8,2025-Q1,12,Allison Park,North Division,Feature/Display,37,25.5,68.9,Behind,1077.69
+397,133,9,2025-Q1,5,Tyler Grant,Fairfield County,Account Penetration,58,57.4,99.0,At Risk,3611.7
+398,133,9,2025-Q1,6,Priya Nair,Fairfield County,Account Penetration,58,51.8,89.3,At Risk,3259.75
+399,133,9,2025-Q1,7,Louis Ferrara,Fairfield County,Account Penetration,58,60.0,103.4,Achieved,3648.74
+400,134,10,2025-Q1,10,Christine Talbot,Spirits Division,New Placements,24,16.5,68.7,Behind,4063.01
+401,134,10,2025-Q1,11,Derek Huang,Spirits Division,New Placements,24,23.8,99.1,At Risk,5861.07
+402,134,10,2025-Q1,15,Ethan Moore,Spirits Division,New Placements,24,18.4,76.5,At Risk,4521.55
+403,135,11,2025-Q1,10,Christine Talbot,Spirits Division,Volume (cases),630,499.0,79.2,At Risk,1320.16
+404,135,11,2025-Q1,11,Derek Huang,Spirits Division,Volume (cases),630,565.1,89.7,At Risk,1495.24
+405,135,11,2025-Q1,15,Ethan Moore,Spirits Division,Volume (cases),630,524.3,83.2,At Risk,1387.14
+406,136,11,2025-Q1,8,Danielle Brooks,Worldwide Wines,Volume (cases),868,792.6,91.3,At Risk,2320.21
+407,136,11,2025-Q1,9,Marcus Webb,Worldwide Wines,Volume (cases),868,412.0,47.5,Behind,1206.01
+408,136,11,2025-Q1,14,Nina Castillo,Worldwide Wines,Volume (cases),868,745.4,85.9,At Risk,2181.88
+409,137,11,2025-Q1,5,Tyler Grant,Fairfield County,Feature/Display,175,206.9,118.2,Achieved,3815.33
+410,137,11,2025-Q1,6,Priya Nair,Fairfield County,Feature/Display,175,143.2,81.8,At Risk,3122.19
+411,137,11,2025-Q1,7,Louis Ferrara,Fairfield County,Feature/Display,175,150.3,85.9,At Risk,3277.87
+412,138,12,2025-Q1,5,Tyler Grant,Fairfield County,Volume (cases),3027,2455.9,81.1,At Risk,3021.66
+413,138,12,2025-Q1,6,Priya Nair,Fairfield County,Volume (cases),3027,1848.7,61.1,Behind,2274.54
+414,138,12,2025-Q1,7,Louis Ferrara,Fairfield County,Volume (cases),3027,2510.7,82.9,At Risk,3089.08
+415,139,13,2025-Q1,1,James Caruso,North Division,Feature/Display,154,164.2,106.6,Achieved,5503.49
+416,139,13,2025-Q1,2,Maria Delgado,North Division,Feature/Display,154,168.3,109.3,Achieved,5503.49
+417,139,13,2025-Q1,12,Allison Park,North Division,Feature/Display,154,139.9,90.8,At Risk,4999.27
+418,140,13,2025-Q1,1,James Caruso,North Division,Account Penetration,60,58.3,97.1,At Risk,7654.76
+419,140,13,2025-Q1,2,Maria Delgado,North Division,Account Penetration,60,43.2,72.0,Behind,5679.37
+420,140,13,2025-Q1,12,Allison Park,North Division,Account Penetration,60,53.1,88.5,At Risk,6976.99
+421,141,13,2025-Q1,3,Kevin O'Brien,South Division,Volume (cases),1874,2083.6,111.2,Achieved,2760.65
+422,141,13,2025-Q1,4,Sandra Moss,South Division,Volume (cases),1874,1199.9,64.0,Behind,1767.61
+423,141,13,2025-Q1,13,Robert Vance,South Division,Volume (cases),1874,977.5,52.2,Behind,1440.05
+424,142,14,2025-Q1,1,James Caruso,North Division,New Placements,23,16.1,70.0,Behind,2073.87
+425,142,14,2025-Q1,2,Maria Delgado,North Division,New Placements,23,18.4,80.1,At Risk,2370.52
+426,142,14,2025-Q1,12,Allison Park,North Division,New Placements,23,22.1,96.0,At Risk,2843.84
+427,143,15,2025-Q1,10,Christine Talbot,Spirits Division,Feature/Display,64,44.2,69.0,Behind,1013.67
+428,143,15,2025-Q1,11,Derek Huang,Spirits Division,Feature/Display,64,67.2,105.0,Achieved,1468.89
+429,143,15,2025-Q1,15,Ethan Moore,Spirits Division,Feature/Display,64,61.1,95.4,At Risk,1402.03
+430,144,15,2025-Q1,5,Tyler Grant,Fairfield County,Account Penetration,74,35.2,47.6,Behind,2234.22
+431,144,15,2025-Q1,6,Priya Nair,Fairfield County,Account Penetration,74,65.9,89.0,At Risk,4175.56
+432,144,15,2025-Q1,7,Louis Ferrara,Fairfield County,Account Penetration,74,75.9,102.6,Achieved,4690.43
+433,145,1,2025-Q2,8,Danielle Brooks,Worldwide Wines,Feature/Display,30,27.1,90.3,At Risk,3407.46
+434,145,1,2025-Q2,9,Marcus Webb,Worldwide Wines,Feature/Display,30,28.0,93.4,At Risk,3523.28
+435,145,1,2025-Q2,14,Nina Castillo,Worldwide Wines,Feature/Display,30,31.9,106.5,Achieved,3771.65
+436,146,2,2025-Q2,8,Danielle Brooks,Worldwide Wines,New Placements,41,52.5,128.0,Achieved,3719.63
+437,146,2,2025-Q2,9,Marcus Webb,Worldwide Wines,New Placements,41,44.8,109.3,Achieved,3719.63
+438,146,2,2025-Q2,14,Nina Castillo,Worldwide Wines,New Placements,41,36.0,87.9,At Risk,3269.59
+439,147,3,2025-Q2,1,James Caruso,North Division,Feature/Display,94,89.5,95.2,At Risk,1298.19
+440,147,3,2025-Q2,2,Maria Delgado,North Division,Feature/Display,94,74.7,79.5,At Risk,1084.27
+441,147,3,2025-Q2,12,Allison Park,North Division,Feature/Display,94,82.9,88.2,At Risk,1202.97
+442,148,3,2025-Q2,10,Christine Talbot,Spirits Division,New Placements,15,14.5,96.5,At Risk,6281.47
+443,148,3,2025-Q2,11,Derek Huang,Spirits Division,New Placements,15,15.9,106.3,Achieved,6509.92
+444,148,3,2025-Q2,15,Ethan Moore,Spirits Division,New Placements,15,14.4,96.3,At Risk,6270.29
+445,149,3,2025-Q2,1,James Caruso,North Division,Feature/Display,196,205.2,104.7,Achieved,7398.27
+446,149,3,2025-Q2,2,Maria Delgado,North Division,Feature/Display,196,191.3,97.6,At Risk,7222.74
+447,149,3,2025-Q2,12,Allison Park,North Division,Feature/Display,196,174.7,89.2,At Risk,6595.81
+448,150,4,2025-Q2,8,Danielle Brooks,Worldwide Wines,Volume (cases),2193,1460.7,66.6,Behind,2509.51
+449,150,4,2025-Q2,9,Marcus Webb,Worldwide Wines,Volume (cases),2193,2389.3,109.0,Achieved,3767.57
+450,150,4,2025-Q2,14,Nina Castillo,Worldwide Wines,Volume (cases),2193,1753.7,80.0,At Risk,3012.8
+451,151,4,2025-Q2,5,Tyler Grant,Fairfield County,Volume (cases),3442,3151.3,91.6,At Risk,6435.22
+452,151,4,2025-Q2,6,Priya Nair,Fairfield County,Volume (cases),3442,3384.9,98.3,At Risk,6912.37
+453,151,4,2025-Q2,7,Louis Ferrara,Fairfield County,Volume (cases),3442,1875.5,54.5,Behind,3830.05
+454,152,5,2025-Q2,1,James Caruso,North Division,New Placements,15,13.0,86.7,At Risk,930.12
+455,152,5,2025-Q2,2,Maria Delgado,North Division,New Placements,15,10.4,69.4,Behind,745.08
+456,152,5,2025-Q2,12,Allison Park,North Division,New Placements,15,11.1,74.3,Behind,797.25
+457,153,6,2025-Q2,3,Kevin O'Brien,South Division,Account Penetration,54,40.5,75.0,At Risk,2349.98
+458,153,6,2025-Q2,4,Sandra Moss,South Division,Account Penetration,54,55.2,102.2,Achieved,3133.25
+459,153,6,2025-Q2,13,Robert Vance,South Division,Account Penetration,54,65.6,121.5,Achieved,3133.25
+460,154,6,2025-Q2,3,Kevin O'Brien,South Division,Account Penetration,23,13.8,59.9,Behind,957.04
+461,154,6,2025-Q2,4,Sandra Moss,South Division,Account Penetration,23,25.7,111.7,Achieved,1598.33
+462,154,6,2025-Q2,13,Robert Vance,South Division,Account Penetration,23,29.2,126.9,Achieved,1598.33
+463,155,6,2025-Q2,1,James Caruso,North Division,Account Penetration,29,12.9,44.4,Behind,2752.07
+464,155,6,2025-Q2,2,Maria Delgado,North Division,Account Penetration,29,30.1,103.8,Achieved,6201.61
+465,155,6,2025-Q2,12,Allison Park,North Division,Account Penetration,29,34.9,120.2,Achieved,6201.61
+466,156,7,2025-Q2,10,Christine Talbot,Spirits Division,Feature/Display,138,166.8,120.8,Achieved,6158.34
+467,156,7,2025-Q2,11,Derek Huang,Spirits Division,Feature/Display,138,94.3,68.3,Behind,4209.14
+468,156,7,2025-Q2,15,Ethan Moore,Spirits Division,Feature/Display,138,148.8,107.8,Achieved,6158.34
+469,157,8,2025-Q2,8,Danielle Brooks,Worldwide Wines,New Placements,45,18.1,40.3,Behind,1157.43
+470,157,8,2025-Q2,9,Marcus Webb,Worldwide Wines,New Placements,45,36.1,80.2,At Risk,2301.8
+471,157,8,2025-Q2,14,Nina Castillo,Worldwide Wines,New Placements,45,49.0,108.8,Achieved,2871.04
+472,158,8,2025-Q2,5,Tyler Grant,Fairfield County,Volume (cases),4041,4505.7,111.5,Achieved,3816.56
+473,158,8,2025-Q2,6,Priya Nair,Fairfield County,Volume (cases),4041,3717.5,92.0,At Risk,3511.06
+474,158,8,2025-Q2,7,Louis Ferrara,Fairfield County,Volume (cases),4041,4109.4,101.7,Achieved,3816.56
+475,159,9,2025-Q2,5,Tyler Grant,Fairfield County,Volume (cases),3083,2323.3,75.4,At Risk,3244.18
+476,159,9,2025-Q2,6,Priya Nair,Fairfield County,Volume (cases),3083,2228.8,72.3,Behind,3112.28
+477,159,9,2025-Q2,7,Louis Ferrara,Fairfield County,Volume (cases),3083,2079.4,67.4,Behind,2903.65
+478,160,9,2025-Q2,5,Tyler Grant,Fairfield County,Feature/Display,135,126.7,93.9,At Risk,734.13
+479,160,9,2025-Q2,6,Priya Nair,Fairfield County,Feature/Display,135,51.1,37.9,Behind,296.26
+480,160,9,2025-Q2,7,Louis Ferrara,Fairfield County,Feature/Display,135,125.4,92.9,At Risk,726.64
+481,161,10,2025-Q2,10,Christine Talbot,Spirits Division,Volume (cases),939,867.1,92.3,At Risk,4721.01
+482,161,10,2025-Q2,11,Derek Huang,Spirits Division,Volume (cases),939,553.9,59.0,Behind,3015.95
+483,161,10,2025-Q2,15,Ethan Moore,Spirits Division,Volume (cases),939,1060.9,113.0,Achieved,5112.56
+484,162,10,2025-Q2,1,James Caruso,North Division,Feature/Display,138,131.8,95.5,At Risk,4635.71
+485,162,10,2025-Q2,2,Maria Delgado,North Division,Feature/Display,138,107.3,77.7,At Risk,3771.79
+486,162,10,2025-Q2,12,Allison Park,North Division,Feature/Display,138,76.9,55.7,Behind,2703.42
+487,163,11,2025-Q2,10,Christine Talbot,Spirits Division,Account Penetration,51,48.4,94.9,At Risk,4783.05
+488,163,11,2025-Q2,11,Derek Huang,Spirits Division,Account Penetration,51,46.7,91.6,At Risk,4613.6
+489,163,11,2025-Q2,15,Ethan Moore,Spirits Division,Account Penetration,51,51.3,100.6,Achieved,5037.54
+490,164,11,2025-Q2,5,Tyler Grant,Fairfield County,Account Penetration,17,14.8,87.1,At Risk,3376.92
+491,164,11,2025-Q2,6,Priya Nair,Fairfield County,Account Penetration,17,11.6,68.1,Behind,2641.85
+492,164,11,2025-Q2,7,Louis Ferrara,Fairfield County,Account Penetration,17,21.8,128.2,Achieved,3878.92
+493,165,12,2025-Q2,1,James Caruso,North Division,Volume (cases),4333,2926.2,67.5,Behind,3610.23
+494,165,12,2025-Q2,2,Maria Delgado,North Division,Volume (cases),4333,3752.6,86.6,At Risk,4629.89
+495,165,12,2025-Q2,12,Allison Park,North Division,Volume (cases),4333,3964.2,91.5,At Risk,4890.88
+496,166,12,2025-Q2,10,Christine Talbot,Spirits Division,Account Penetration,66,82.8,125.4,Achieved,7932.4
+497,166,12,2025-Q2,11,Derek Huang,Spirits Division,Account Penetration,66,41.6,63.1,Behind,5001.51
+498,166,12,2025-Q2,15,Ethan Moore,Spirits Division,Account Penetration,66,72.5,109.9,Achieved,7932.4
+499,167,12,2025-Q2,5,Tyler Grant,Fairfield County,Account Penetration,56,35.7,63.8,Behind,2101.96
+500,167,12,2025-Q2,6,Priya Nair,Fairfield County,Account Penetration,56,37.0,66.1,Behind,2179.92
+501,167,12,2025-Q2,7,Louis Ferrara,Fairfield County,Account Penetration,56,48.1,85.9,At Risk,2832.54
+502,168,13,2025-Q2,1,James Caruso,North Division,Feature/Display,106,64.0,60.4,Behind,3375.27
+503,168,13,2025-Q2,2,Maria Delgado,North Division,Feature/Display,106,103.9,98.0,At Risk,5481.94
+504,168,13,2025-Q2,12,Allison Park,North Division,Feature/Display,106,78.6,74.2,Behind,4146.57
+505,169,13,2025-Q2,10,Christine Talbot,Spirits Division,New Placements,9,7.0,77.4,At Risk,2300.95
+506,169,13,2025-Q2,11,Derek Huang,Spirits Division,New Placements,9,10.8,119.8,Achieved,2972.68
+507,169,13,2025-Q2,15,Ethan Moore,Spirits Division,New Placements,9,6.3,70.2,Behind,2085.82
+508,170,14,2025-Q2,10,Christine Talbot,Spirits Division,Feature/Display,92,122.3,132.9,Achieved,2389.97
+509,170,14,2025-Q2,11,Derek Huang,Spirits Division,Feature/Display,92,96.7,105.2,Achieved,2389.97
+510,170,14,2025-Q2,15,Ethan Moore,Spirits Division,Feature/Display,92,109.1,118.6,Achieved,2389.97
+511,171,14,2025-Q2,3,Kevin O'Brien,South Division,Account Penetration,52,44.0,84.7,At Risk,941.02
+512,171,14,2025-Q2,4,Sandra Moss,South Division,Account Penetration,52,51.9,99.7,At Risk,1108.1
+513,171,14,2025-Q2,13,Robert Vance,South Division,Account Penetration,52,59.8,115.1,Achieved,1111.26
+514,172,14,2025-Q2,8,Danielle Brooks,Worldwide Wines,New Placements,24,15.1,62.9,Behind,4883.17
+515,172,14,2025-Q2,9,Marcus Webb,Worldwide Wines,New Placements,24,25.9,107.8,Achieved,7757.72
+516,172,14,2025-Q2,14,Nina Castillo,Worldwide Wines,New Placements,24,26.8,111.7,Achieved,7757.72
+517,173,15,2025-Q2,5,Tyler Grant,Fairfield County,Volume (cases),2736,3418.8,125.0,Achieved,4691.92
+518,173,15,2025-Q2,6,Priya Nair,Fairfield County,Volume (cases),2736,2010.2,73.5,Behind,3447.25
+519,173,15,2025-Q2,7,Louis Ferrara,Fairfield County,Volume (cases),2736,2065.5,75.5,At Risk,3542.08

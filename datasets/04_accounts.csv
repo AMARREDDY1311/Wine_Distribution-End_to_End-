@@ -1,0 +1,186 @@
+account_id,account_name,account_type,channel,town,state,division,rep_id,active
+1,Harbor Grille,Bar/Lounge,On-Premise,Waterbury,CT,North Division,1,1
+2,Summit Cellar,Package Store,Off-Premise,Hartford,CT,North Division,12,0
+3,Elite Bistro,Liquor Store,Off-Premise,West Hartford,CT,North Division,1,1
+4,The Corner Bistro,Bar/Lounge,On-Premise,New Britain,CT,North Division,12,0
+5,Prestige Grille,Bar/Lounge,On-Premise,West Hartford,CT,North Division,12,1
+6,Elite Spirits,Liquor Store,Off-Premise,New Britain,CT,North Division,12,1
+7,Oak Provisions,Club/Venue,On-Premise,Hartford,CT,North Division,1,1
+8,East Side Lounge,Bar/Lounge,On-Premise,Waterbury,CT,North Division,1,1
+9,Silver Bistro,Liquor Store,Off-Premise,Hartford,CT,North Division,1,1
+10,Red Door Market,Grocery/Retail,Off-Premise,Waterbury,CT,North Division,2,1
+11,Primo Cellar,Grocery/Retail,Off-Premise,Meriden,CT,North Division,1,1
+12,Black Bear Bistro,Hotel,On-Premise,West Hartford,CT,North Division,12,0
+13,Prestige Package Store,Grocery/Retail,Off-Premise,Waterbury,CT,North Division,1,1
+14,Bella Grille,Club/Venue,On-Premise,New Britain,CT,North Division,2,1
+15,Bella Market,Club/Venue,On-Premise,New Britain,CT,North Division,1,1
+16,Black Bear Bar & Grill,Package Store,Off-Premise,Meriden,CT,North Division,2,1
+17,River Lounge,Bar/Lounge,On-Premise,Waterbury,CT,North Division,12,0
+18,Oak Cellar,Grocery/Retail,Off-Premise,Hartford,CT,North Division,12,1
+19,River Restaurant,Bar/Lounge,On-Premise,New Britain,CT,North Division,2,1
+20,Black Bear Bar & Grill,Bar/Lounge,On-Premise,West Hartford,CT,North Division,12,1
+21,Silver Market,Bar/Lounge,On-Premise,Hartford,CT,North Division,1,1
+22,Silver Spirits,Restaurant,On-Premise,Waterbury,CT,North Division,1,1
+23,Classic Package Store,Bar/Lounge,On-Premise,Waterbury,CT,North Division,12,0
+24,Main Street Spirits,Bar/Lounge,On-Premise,Meriden,CT,North Division,2,1
+25,Summit Kitchen,Grocery/Retail,Off-Premise,West Hartford,CT,North Division,2,1
+26,Classic Spirits,Liquor Store,Off-Premise,West Hartford,CT,North Division,2,1
+27,Stone Tavern,Liquor Store,Off-Premise,West Hartford,CT,North Division,1,1
+28,Primo Market,Bar/Lounge,On-Premise,Hartford,CT,North Division,12,1
+29,River Provisions,Grocery/Retail,Off-Premise,Meriden,CT,North Division,1,1
+30,Black Bear Spirits,Liquor Store,Off-Premise,West Hartford,CT,North Division,12,1
+31,Oak Restaurant,Package Store,Off-Premise,Hartford,CT,North Division,12,1
+32,Harbor Pub,Club/Venue,On-Premise,West Hartford,CT,North Division,2,1
+33,Silver Bistro,Liquor Store,Off-Premise,Waterbury,CT,North Division,1,1
+34,West End Grille,Grocery/Retail,Off-Premise,Waterbury,CT,North Division,1,1
+35,Village Package Store,Club/Venue,On-Premise,Hartford,CT,North Division,12,1
+36,Golden Market,Grocery/Retail,Off-Premise,West Hartford,CT,North Division,1,1
+37,Summit Lounge,Grocery/Retail,Off-Premise,New Britain,CT,North Division,12,1
+38,The Corner Steakhouse,Liquor Store,Off-Premise,Waterbury,CT,North Division,1,1
+39,Harbor Package Store,Club/Venue,On-Premise,Waterbury,CT,North Division,2,1
+40,Stone Grille,Grocery/Retail,Off-Premise,New Britain,CT,North Division,1,1
+41,Bella Cellar,Club/Venue,On-Premise,Shelton,CT,South Division,3,1
+42,Elite Provisions,Bar/Lounge,On-Premise,Milford,CT,South Division,13,1
+43,Main Street Restaurant,Hotel,On-Premise,Milford,CT,South Division,13,0
+44,Prestige Spirits,Grocery/Retail,Off-Premise,Milford,CT,South Division,13,1
+45,Blue Cellar,Liquor Store,Off-Premise,Hamden,CT,South Division,13,1
+46,Red Door Wine Bar,Liquor Store,Off-Premise,Bridgeport,CT,South Division,3,1
+47,Stone Kitchen,Hotel,On-Premise,New Haven,CT,South Division,3,1
+48,Classic Restaurant,Grocery/Retail,Off-Premise,Milford,CT,South Division,3,0
+49,The Corner Bistro,Bar/Lounge,On-Premise,New Haven,CT,South Division,3,1
+50,Primo Market,Restaurant,On-Premise,Hamden,CT,South Division,13,1
+51,Stone Bar & Grill,Bar/Lounge,On-Premise,Shelton,CT,South Division,13,1
+52,Summit Cellar,Grocery/Retail,Off-Premise,Bridgeport,CT,South Division,4,1
+53,Stone Provisions,Club/Venue,On-Premise,Shelton,CT,South Division,4,0
+54,Blue Bistro,Package Store,Off-Premise,New Haven,CT,South Division,4,1
+55,Red Door Spirits,Liquor Store,Off-Premise,Shelton,CT,South Division,13,1
+56,Primo Pub,Restaurant,On-Premise,New Haven,CT,South Division,4,1
+57,Silver Provisions,Bar/Lounge,On-Premise,New Haven,CT,South Division,3,1
+58,Blue Restaurant,Bar/Lounge,On-Premise,Shelton,CT,South Division,4,1
+59,River Bar & Grill,Bar/Lounge,On-Premise,Shelton,CT,South Division,3,1
+60,West End Provisions,Restaurant,On-Premise,Bridgeport,CT,South Division,3,1
+61,Elite Market,Restaurant,On-Premise,New Haven,CT,South Division,3,1
+62,River Spirits,Liquor Store,Off-Premise,Shelton,CT,South Division,3,1
+63,Black Bear Package Store,Bar/Lounge,On-Premise,New Haven,CT,South Division,4,1
+64,The Corner Spirits,Club/Venue,On-Premise,Hamden,CT,South Division,4,1
+65,Golden Spirits,Package Store,Off-Premise,Bridgeport,CT,South Division,13,1
+66,Main Street Tavern,Hotel,On-Premise,Milford,CT,South Division,3,1
+67,Primo Steakhouse,Restaurant,On-Premise,Bridgeport,CT,South Division,13,0
+68,Silver Grille,Grocery/Retail,Off-Premise,New Haven,CT,South Division,4,1
+69,Village Package Store,Bar/Lounge,On-Premise,Bridgeport,CT,South Division,3,1
+70,Village Bistro,Restaurant,On-Premise,Milford,CT,South Division,13,1
+71,Bella Pub,Liquor Store,Off-Premise,Milford,CT,South Division,3,1
+72,Classic Kitchen,Grocery/Retail,Off-Premise,Bridgeport,CT,South Division,3,1
+73,Prestige Bistro,Package Store,Off-Premise,Shelton,CT,South Division,13,1
+74,Classic Restaurant,Hotel,On-Premise,Hamden,CT,South Division,3,1
+75,Silver Kitchen,Liquor Store,Off-Premise,Hamden,CT,South Division,3,1
+76,Golden Wine Bar,Club/Venue,On-Premise,Hamden,CT,South Division,3,1
+77,The Corner Wine Bar,Grocery/Retail,Off-Premise,Bridgeport,CT,South Division,3,1
+78,Bella Restaurant,Grocery/Retail,Off-Premise,Milford,CT,South Division,4,1
+79,Summit Package Store,Restaurant,On-Premise,Hamden,CT,South Division,3,1
+80,Red Door Bar & Grill,Liquor Store,Off-Premise,Milford,CT,South Division,13,0
+81,Golden Steakhouse,Restaurant,On-Premise,Greenwich,CT,Fairfield County,7,1
+82,Elite Bar & Grill,Bar/Lounge,On-Premise,Stamford,CT,Fairfield County,6,1
+83,Harbor Package Store,Package Store,Off-Premise,Stamford,CT,Fairfield County,7,1
+84,Summit Bar & Grill,Grocery/Retail,Off-Premise,Danbury,CT,Fairfield County,5,1
+85,Silver Kitchen,Grocery/Retail,Off-Premise,Danbury,CT,Fairfield County,6,1
+86,Oak Package Store,Restaurant,On-Premise,Stamford,CT,Fairfield County,7,1
+87,East Side Market,Restaurant,On-Premise,Danbury,CT,Fairfield County,5,1
+88,Silver Provisions,Package Store,Off-Premise,Norwalk,CT,Fairfield County,6,1
+89,River Cellar,Grocery/Retail,Off-Premise,Fairfield,CT,Fairfield County,7,1
+90,East Side Restaurant,Restaurant,On-Premise,Stamford,CT,Fairfield County,5,1
+91,Summit Restaurant,Club/Venue,On-Premise,Stamford,CT,Fairfield County,6,1
+92,Classic Restaurant,Liquor Store,Off-Premise,Norwalk,CT,Fairfield County,5,1
+93,Primo Bar & Grill,Club/Venue,On-Premise,Danbury,CT,Fairfield County,5,1
+94,Red Door Kitchen,Package Store,Off-Premise,Norwalk,CT,Fairfield County,5,1
+95,Red Door Provisions,Club/Venue,On-Premise,Greenwich,CT,Fairfield County,6,1
+96,Prestige Cellar,Bar/Lounge,On-Premise,Norwalk,CT,Fairfield County,5,1
+97,River Package Store,Restaurant,On-Premise,Fairfield,CT,Fairfield County,5,1
+98,Silver Provisions,Club/Venue,On-Premise,Fairfield,CT,Fairfield County,7,0
+99,Stone Bar & Grill,Club/Venue,On-Premise,Norwalk,CT,Fairfield County,7,1
+100,Harbor Spirits,Club/Venue,On-Premise,Stamford,CT,Fairfield County,6,1
+101,Stone Kitchen,Hotel,On-Premise,Fairfield,CT,Fairfield County,6,1
+102,Stone Kitchen,Package Store,Off-Premise,Stamford,CT,Fairfield County,5,1
+103,Black Bear Lounge,Club/Venue,On-Premise,Danbury,CT,Fairfield County,5,1
+104,Oak Lounge,Liquor Store,Off-Premise,Greenwich,CT,Fairfield County,7,1
+105,Elite Lounge,Restaurant,On-Premise,Stamford,CT,Fairfield County,6,1
+106,River Steakhouse,Restaurant,On-Premise,Danbury,CT,Fairfield County,5,1
+107,Prestige Spirits,Package Store,Off-Premise,Danbury,CT,Fairfield County,6,1
+108,East Side Steakhouse,Restaurant,On-Premise,Greenwich,CT,Fairfield County,6,1
+109,Classic Kitchen,Restaurant,On-Premise,Danbury,CT,Fairfield County,7,1
+110,East Side Grille,Club/Venue,On-Premise,Greenwich,CT,Fairfield County,7,1
+111,Blue Lounge,Restaurant,On-Premise,Fairfield,CT,Fairfield County,7,1
+112,Silver Steakhouse,Package Store,Off-Premise,Danbury,CT,Fairfield County,5,1
+113,Golden Restaurant,Package Store,Off-Premise,Danbury,CT,Fairfield County,6,1
+114,Silver Spirits,Grocery/Retail,Off-Premise,Danbury,CT,Fairfield County,5,1
+115,Blue Spirits,Package Store,Off-Premise,Fairfield,CT,Fairfield County,7,1
+116,River Steakhouse,Hotel,On-Premise,Greenwich,CT,Fairfield County,6,1
+117,Elite Market,Hotel,On-Premise,Stamford,CT,Fairfield County,6,1
+118,Blue Spirits,Grocery/Retail,Off-Premise,Greenwich,CT,Fairfield County,7,1
+119,Silver Wine Bar,Liquor Store,Off-Premise,Fairfield,CT,Fairfield County,7,1
+120,Blue Restaurant,Club/Venue,On-Premise,Fairfield,CT,Fairfield County,7,1
+121,River Pub,Hotel,On-Premise,Hartford,CT,Worldwide Wines,14,1
+122,Prestige Lounge,Club/Venue,On-Premise,Hartford,CT,Worldwide Wines,8,1
+123,Golden Kitchen,Bar/Lounge,On-Premise,New Haven,CT,Worldwide Wines,8,1
+124,Primo Kitchen,Grocery/Retail,Off-Premise,Greenwich,CT,Worldwide Wines,8,1
+125,West End Spirits,Bar/Lounge,On-Premise,Fairfield,CT,Worldwide Wines,14,1
+126,Black Bear Wine Bar,Bar/Lounge,On-Premise,Greenwich,CT,Worldwide Wines,8,1
+127,The Corner Package Store,Club/Venue,On-Premise,Hartford,CT,Worldwide Wines,9,1
+128,Stone Tavern,Liquor Store,Off-Premise,Fairfield,CT,Worldwide Wines,8,1
+129,Elite Kitchen,Liquor Store,Off-Premise,Hartford,CT,Worldwide Wines,8,1
+130,West End Pub,Grocery/Retail,Off-Premise,Fairfield,CT,Worldwide Wines,14,1
+131,Silver Provisions,Grocery/Retail,Off-Premise,Greenwich,CT,Worldwide Wines,14,1
+132,Village Spirits,Liquor Store,Off-Premise,Fairfield,CT,Worldwide Wines,8,1
+133,Main Street Wine Bar,Club/Venue,On-Premise,Stamford,CT,Worldwide Wines,8,1
+134,Oak Provisions,Liquor Store,Off-Premise,Fairfield,CT,Worldwide Wines,14,0
+135,Stone Bar & Grill,Restaurant,On-Premise,Greenwich,CT,Worldwide Wines,14,1
+136,Golden Kitchen,Hotel,On-Premise,Stamford,CT,Worldwide Wines,9,0
+137,Elite Bistro,Bar/Lounge,On-Premise,New Haven,CT,Worldwide Wines,8,1
+138,Black Bear Cellar,Package Store,Off-Premise,New Haven,CT,Worldwide Wines,8,1
+139,Bella Spirits,Hotel,On-Premise,Greenwich,CT,Worldwide Wines,14,1
+140,West End Spirits,Bar/Lounge,On-Premise,Hartford,CT,Worldwide Wines,9,1
+141,Black Bear Package Store,Package Store,Off-Premise,Fairfield,CT,Worldwide Wines,8,1
+142,Classic Spirits,Restaurant,On-Premise,Greenwich,CT,Worldwide Wines,9,1
+143,Golden Provisions,Club/Venue,On-Premise,Greenwich,CT,Worldwide Wines,9,1
+144,Elite Cellar,Club/Venue,On-Premise,Fairfield,CT,Worldwide Wines,14,1
+145,Stone Wine Bar,Hotel,On-Premise,New Haven,CT,Worldwide Wines,9,1
+146,Main Street Grille,Hotel,On-Premise,Danbury,CT,Spirits Division,15,1
+147,Black Bear Cellar,Club/Venue,On-Premise,Hartford,CT,Spirits Division,11,1
+148,Summit Steakhouse,Restaurant,On-Premise,Meriden,CT,Spirits Division,11,1
+149,Classic Steakhouse,Restaurant,On-Premise,Bridgeport,CT,Spirits Division,15,1
+150,East Side Tavern,Bar/Lounge,On-Premise,Danbury,CT,Spirits Division,10,1
+151,Oak Spirits,Bar/Lounge,On-Premise,Waterbury,CT,Spirits Division,11,0
+152,Silver Lounge,Hotel,On-Premise,Danbury,CT,Spirits Division,11,1
+153,Oak Market,Liquor Store,Off-Premise,Bridgeport,CT,Spirits Division,10,1
+154,Elite Grille,Bar/Lounge,On-Premise,Waterbury,CT,Spirits Division,15,1
+155,Bella Provisions,Club/Venue,On-Premise,Bridgeport,CT,Spirits Division,10,1
+156,Stone Kitchen,Grocery/Retail,Off-Premise,Bridgeport,CT,Spirits Division,10,1
+157,Stone Tavern,Package Store,Off-Premise,Danbury,CT,Spirits Division,10,1
+158,Classic Kitchen,Package Store,Off-Premise,Danbury,CT,Spirits Division,11,1
+159,Red Door Tavern,Grocery/Retail,Off-Premise,Meriden,CT,Spirits Division,15,1
+160,Harbor Provisions,Hotel,On-Premise,Hartford,CT,Spirits Division,10,1
+161,Classic Grille,Grocery/Retail,Off-Premise,Waterbury,CT,Spirits Division,15,1
+162,Black Bear Spirits,Restaurant,On-Premise,Hartford,CT,Spirits Division,15,1
+163,Stone Bistro,Club/Venue,On-Premise,Waterbury,CT,Spirits Division,15,1
+164,Prestige Provisions,Club/Venue,On-Premise,Bridgeport,CT,Spirits Division,15,1
+165,Primo Lounge,Liquor Store,Off-Premise,Meriden,CT,Spirits Division,15,0
+166,Red Door Bistro,Package Store,Off-Premise,Meriden,CT,Spirits Division,11,1
+167,The Corner Market,Club/Venue,On-Premise,Danbury,CT,Spirits Division,11,1
+168,Harbor Spirits,Package Store,Off-Premise,Waterbury,CT,Spirits Division,11,1
+169,Summit Spirits,Package Store,Off-Premise,Hartford,CT,Spirits Division,15,1
+170,Oak Steakhouse,Club/Venue,On-Premise,Meriden,CT,Spirits Division,11,1
+171,West End Spirits,Hotel,On-Premise,Meriden,CT,Spirits Division,11,1
+172,Stone Market,Hotel,On-Premise,Bridgeport,CT,Spirits Division,11,1
+173,Stone Provisions,Grocery/Retail,Off-Premise,Danbury,CT,Spirits Division,15,1
+174,Black Bear Lounge,Liquor Store,Off-Premise,Bridgeport,CT,Spirits Division,11,1
+175,River Wine Bar,Hotel,On-Premise,Hartford,CT,Spirits Division,11,1
+176,Silver Bar & Grill,Package Store,Off-Premise,Meriden,CT,Spirits Division,11,0
+177,Elite Grille,Bar/Lounge,On-Premise,Meriden,CT,Spirits Division,10,1
+178,Stone Cellar,Liquor Store,Off-Premise,Danbury,CT,Spirits Division,15,1
+179,Stone Cellar,Package Store,Off-Premise,Danbury,CT,Spirits Division,15,0
+180,Main Street Wine Bar,Restaurant,On-Premise,Bridgeport,CT,Spirits Division,11,0
+181,Stone Spirits,Hotel,On-Premise,Hartford,CT,Spirits Division,15,1
+182,Classic Lounge,Grocery/Retail,Off-Premise,Danbury,CT,Spirits Division,15,1
+183,Red Door Spirits,Hotel,On-Premise,Meriden,CT,Spirits Division,11,1
+184,West End Bar & Grill,Hotel,On-Premise,Waterbury,CT,Spirits Division,10,1
+185,Harbor Cellar,Hotel,On-Premise,Hartford,CT,Spirits Division,10,1
