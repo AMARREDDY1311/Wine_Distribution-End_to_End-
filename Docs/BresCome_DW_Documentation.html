@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>BresCome Barton — Data Warehouse Documentation</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+:root {
+  --wine:#8b1a2a; --gold:#b8861f; --teal:#1e6b5e; --blue:#1a4fa0; --purple:#5a3a99;
+  --bronze:#cd7f32; --silver:#708090; --gold-layer:#d4af37;
+  --bg:#f8f6f2; --surface:#fff; --border:#e0dbd0; --text:#1a1a1a; --text-dim:#666;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.6;}
+
+/* NAV */
+nav{background:#1a1a1a;color:#fff;padding:0;position:sticky;top:0;z-index:100;display:flex;align-items:center;}
+.nav-brand{padding:14px 24px;font-weight:700;font-size:13px;letter-spacing:.05em;border-right:1px solid #333;white-space:nowrap;}
+.nav-brand span{color:var(--wine);}
+.nav-links{display:flex;gap:0;overflow-x:auto;}
+.nav-links a{color:#aaa;text-decoration:none;font-size:11px;padding:14px 16px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;transition:color .2s;}
+.nav-links a:hover{color:#fff;}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#1a1a1a 0%,#2d1a1a 50%,#1a2d1a 100%);color:#fff;padding:60px 48px 48px;border-bottom:3px solid var(--wine);}
+.hero h1{font-size:36px;font-weight:700;letter-spacing:-.01em;margin-bottom:8px;}
+.hero h1 span{color:var(--wine);}
+.hero p{color:#aaa;font-size:15px;max-width:600px;margin-bottom:24px;}
+.hero-badges{display:flex;gap:12px;flex-wrap:wrap;}
+.badge{font-size:10px;padding:4px 12px;border-radius:20px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;}
+.badge-wine{background:rgba(139,26,42,.3);color:#e8a0aa;border:1px solid rgba(139,26,42,.5);}
+.badge-teal{background:rgba(30,107,94,.3);color:#7ecfc4;border:1px solid rgba(30,107,94,.5);}
+.badge-blue{background:rgba(26,79,160,.3);color:#8aabde;border:1px solid rgba(26,79,160,.5);}
+.badge-gold{background:rgba(184,134,31,.3);color:#e0c06a;border:1px solid rgba(184,134,31,.5);}
+
+/* LAYOUT */
+.container{max-width:1200px;margin:0 auto;padding:0 48px;}
+section{padding:48px 0;border-bottom:1px solid var(--border);}
+h2{font-size:22px;font-weight:700;margin-bottom:6px;color:var(--text);}
+h2 .section-num{color:var(--wine);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:4px;}
+h3{font-size:15px;font-weight:600;margin:24px 0 10px;}
+p{margin-bottom:12px;color:#333;max-width:800px;}
+
+/* CARDS */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:20px;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:20px;border-left:4px solid var(--card-color,var(--wine));}
+.card h4{font-size:13px;font-weight:600;margin-bottom:6px;}
+.card p{font-size:12px;color:var(--text-dim);max-width:none;margin:0;}
+
+/* MEDALLION ARCHITECTURE DIAGRAM */
+.arch-diagram{display:flex;gap:0;margin:28px 0;align-items:stretch;border-radius:12px;overflow:hidden;border:1px solid var(--border);}
+.arch-layer{flex:1;padding:28px 20px;text-align:center;}
+.arch-layer.bronze-l{background:linear-gradient(160deg,#2d1a0a,#3d2510);}
+.arch-layer.silver-l{background:linear-gradient(160deg,#141e2d,#1a2840);}
+.arch-layer.gold-l  {background:linear-gradient(160deg,#2d2600,#3d3510);}
+.arch-layer-icon{font-size:36px;margin-bottom:12px;}
+.arch-layer-name{font-size:18px;font-weight:700;color:#fff;margin-bottom:4px;}
+.arch-layer-schema{font-size:11px;font-family:'Fira Code',monospace;padding:3px 10px;border-radius:20px;display:inline-block;margin-bottom:12px;}
+.bronze-schema{background:rgba(205,127,50,.2);color:#e8a870;border:1px solid rgba(205,127,50,.4);}
+.silver-schema{background:rgba(112,128,144,.2);color:#b0bec5;border:1px solid rgba(112,128,144,.4);}
+.gold-schema  {background:rgba(212,175,55,.2);color:#f0d060;border:1px solid rgba(212,175,55,.4);}
+.arch-layer-desc{font-size:12px;color:#aaa;line-height:1.5;margin-bottom:16px;}
+.arch-layer-items{text-align:left;}
+.arch-item{font-size:11px;color:#ccc;padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);font-family:'Fira Code',monospace;}
+.arch-item:last-child{border-bottom:none;}
+.arch-arrow{display:flex;align-items:center;padding:0 8px;font-size:28px;color:#555;}
+
+/* DATA FLOW */
+.flow-diagram{margin:28px 0;}
+.flow-step{display:flex;align-items:flex-start;gap:20px;margin-bottom:0;}
+.flow-line{display:flex;flex-direction:column;align-items:center;}
+.flow-circle{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;flex-shrink:0;color:#fff;}
+.flow-connector{width:2px;height:40px;background:var(--border);margin:4px 0;}
+.flow-content{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px 20px;flex:1;margin-top:0;}
+.flow-content h4{font-size:13px;font-weight:600;margin-bottom:4px;}
+.flow-content p{font-size:12px;color:var(--text-dim);margin:0;max-width:none;}
+
+/* STAR SCHEMA */
+.star-schema{position:relative;margin:28px 0;}
+.schema-grid{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:auto auto auto;gap:16px;}
+.schema-table{background:var(--surface);border:1px solid var(--border);border-radius:8px;overflow:hidden;}
+.schema-table.fact{border-color:var(--wine);border-width:2px;}
+.schema-header{padding:10px 14px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;}
+.schema-header.dim-h{background:#f0f4ff;color:var(--blue);}
+.schema-header.fact-h{background:#fff0f2;color:var(--wine);}
+.schema-field{display:flex;justify-content:space-between;padding:5px 14px;font-size:11px;font-family:'Fira Code',monospace;border-top:1px solid #f5f5f5;}
+.schema-field.pk{background:#fffbf0;color:var(--gold);}
+.schema-field.fk{color:var(--blue);}
+.schema-field.measure{color:var(--teal);}
+.field-type{color:#bbb;font-size:10px;}
+.center-fact{grid-column:2;grid-row:2;}
+.schema-badge{font-size:8px;padding:1px 6px;border-radius:10px;margin-left:6px;font-family:'Inter',sans-serif;}
+.fact-badge{background:rgba(139,26,42,.1);color:var(--wine);}
+.dim-badge{background:rgba(26,79,160,.1);color:var(--blue);}
+
+/* TABLES */
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:12px;}
+th{background:#f5f2ec;padding:10px 14px;text-align:left;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-dim);border-bottom:2px solid var(--border);}
+td{padding:9px 14px;border-bottom:1px solid var(--border);}
+tr:last-child td{border-bottom:none;}
+tr:hover td{background:#faf8f5;}
+code{font-family:'Fira Code',monospace;font-size:11px;background:#f5f2ec;padding:1px 6px;border-radius:3px;color:var(--wine);}
+
+/* NAMING TABLE */
+.naming-section{margin-bottom:28px;}
+.tag{display:inline-block;font-size:10px;padding:2px 8px;border-radius:12px;font-weight:600;margin-right:4px;}
+.tag-bronze{background:#fff0e6;color:var(--bronze);}
+.tag-silver{background:#f0f4f8;color:var(--silver);}
+.tag-gold{background:#fffbe6;color:var(--gold);}
+
+/* DATA CATALOG */
+.catalog-table-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;margin-bottom:20px;overflow:hidden;}
+.catalog-table-header{padding:14px 20px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border);}
+.catalog-table-icon{width:32px;height:32px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:15px;}
+.catalog-table-name{font-weight:600;font-size:14px;}
+.catalog-table-meta{font-size:11px;color:var(--text-dim);margin-left:auto;}
+.catalog-field{display:grid;grid-template-columns:180px 80px 60px 1fr;gap:12px;padding:8px 20px;border-top:1px solid #f5f5f5;align-items:start;}
+.catalog-field:hover{background:#faf8f5;}
+.field-name-col{font-family:'Fira Code',monospace;font-size:12px;color:var(--text);}
+.field-type-col{font-size:11px;color:var(--text-dim);}
+.field-key-col{font-size:10px;font-weight:600;}
+.field-desc-col{font-size:12px;color:var(--text-dim);}
+
+/* RUN ORDER */
+.run-steps{counter-reset:steps;margin:20px 0;}
+.run-step{counter-increment:steps;display:flex;gap:16px;margin-bottom:12px;align-items:flex-start;}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--wine);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;margin-top:1px;}
+.step-body h4{font-size:13px;font-weight:600;margin-bottom:2px;}
+.step-body p{font-size:12px;color:var(--text-dim);margin:0;max-width:none;}
+pre{background:#1a1a1a;color:#e8e6e0;padding:16px 20px;border-radius:8px;font-family:'Fira Code',monospace;font-size:12px;overflow-x:auto;margin:8px 0;}
+
+/* QA CHECKS */
+.check-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;}
+.check-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px;}
+.check-card h4{font-size:12px;font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:8px;}
+.check-item{font-size:11px;color:var(--text-dim);padding:3px 0;display:flex;align-items:center;gap:8px;}
+.check-item::before{content:"✓";color:var(--teal);font-weight:700;}
+
+footer{background:#1a1a1a;color:#666;padding:32px 48px;font-size:11px;text-align:center;letter-spacing:.05em;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">🍷 <span>BresCome</span> Barton DW</div>
+  <div class="nav-links">
+    <a href="#overview">Overview</a>
+    <a href="#architecture">Architecture</a>
+    <a href="#dataflow">Data Flow</a>
+    <a href="#starschema">Star Schema</a>
+    <a href="#naming">Naming Conventions</a>
+    <a href="#catalog">Data Catalog</a>
+    <a href="#quality">Quality Checks</a>
+    <a href="#runorder">Run Order</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>BresCome Barton<br><span>Data Warehouse</span> Documentation</h1>
+  <p>Production-style data warehouse built on SQL Server using the Medallion Architecture (Bronze → Silver → Gold). Covers the full pipeline from raw CSV ingestion to analytics-ready Star Schema.</p>
+  <div class="hero-badges">
+    <span class="badge badge-wine">SQL Server</span>
+    <span class="badge badge-teal">Medallion Architecture</span>
+    <span class="badge badge-blue">Star Schema / Kimball</span>
+    <span class="badge badge-gold">T-SQL · Stored Procedures</span>
+    <span class="badge badge-wine">8 Tables · 16,292 Rows</span>
+    <span class="badge badge-teal">Jan 2024 – Dec 2025</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- SECTION 1: PROJECT OVERVIEW                                -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div class="container">
+<section id="overview">
+  <h2><span class="section-num">01 — Overview</span>Project Summary</h2>
+  <p>Brescome Barton Inc. is the largest wholesale distributor of spirits, wine, and beer in Connecticut (~$348M revenue). This warehouse consolidates sales rep performance, supplier incentive programs, customer accounts, and transaction data into a single analytics-ready platform.</p>
+
+  <div class="card-grid">
+    <div class="card" style="--card-color:#cd7f32">
+      <h4>🥉 Bronze Layer</h4>
+      <p>Raw data ingested as-is from 8 CSV source files. All columns are NVARCHAR — no type enforcement. Loaded via stored procedure <code>bronze.load_bronze</code>.</p>
+    </div>
+    <div class="card" style="--card-color:#708090">
+      <h4>🥈 Silver Layer</h4>
+      <p>Cleansed, typed, deduplicated, and validated. Types enforced, nulls handled, values standardized. Loaded via <code>silver.load_silver</code>.</p>
+    </div>
+    <div class="card" style="--card-color:#d4af37">
+      <h4>🥇 Gold Layer</h4>
+      <p>Analytics-ready Star Schema views. 6 dimensions + 3 fact tables. Surrogate keys generated via ROW_NUMBER(). Ready for Power BI / Tableau.</p>
+    </div>
+    <div class="card" style="--card-color:#1e6b5e">
+      <h4>📊 Source Data</h4>
+      <p>8 CSV files — 16,292 total rows. Covers sales reps, suppliers, products, accounts, incentive programs, transactions, quotas, and program attainments.</p>
+    </div>
+    <div class="card" style="--card-color:#1a4fa0">
+      <h4>📅 Date Range</h4>
+      <p>January 2024 through December 2025. Two full years of daily transaction data with seasonal patterns baked in (holiday peaks, summer peaks).</p>
+    </div>
+    <div class="card" style="--card-color:#5a3a99">
+      <h4>🏗️ Tech Stack</h4>
+      <p>Microsoft SQL Server (SQLEXPRESS01), T-SQL, SSMS. Stored procedures for ETL. Views for Gold layer. No external dependencies.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- SECTION 2: ARCHITECTURE                                    -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<section id="architecture">
+  <h2><span class="section-num">02 — Architecture</span>Medallion Architecture</h2>
+  <p>The warehouse follows the Medallion Architecture — a layered approach that progressively refines data from raw ingestion to business-ready outputs. Each layer has a distinct purpose, format, and set of rules.</p>
+
+  <div class="arch-diagram">
+    <div class="arch-layer bronze-l">
+      <div class="arch-layer-icon">🥉</div>
+      <div class="arch-layer-name">BRONZE</div>
+      <div class="arch-layer-schema bronze-schema">schema: bronze</div>
+      <div class="arch-layer-desc">Raw ingestion layer. Data lands exactly as it came from the source. Zero transformation — only audit column added.</div>
+      <div class="arch-layer-items">
+        <div class="arch-item">Type: Physical Tables</div>
+        <div class="arch-item">All cols: NVARCHAR</div>
+        <div class="arch-item">Load: BULK INSERT</div>
+        <div class="arch-item">Strategy: Truncate + Insert</div>
+        <div class="arch-item">Audit: dwh_create_date</div>
+        <div class="arch-item">Proc: bronze.load_bronze</div>
+      </div>
+    </div>
+    <div class="arch-arrow">→</div>
+    <div class="arch-layer silver-l">
+      <div class="arch-layer-icon">🥈</div>
+      <div class="arch-layer-name">SILVER</div>
+      <div class="arch-layer-schema silver-schema">schema: silver</div>
+      <div class="arch-layer-desc">Cleansed and standardized layer. Types enforced, strings trimmed, values normalized, duplicates removed.</div>
+      <div class="arch-layer-items">
+        <div class="arch-item">Type: Physical Tables</div>
+        <div class="arch-item">Types: INT/DATE/DECIMAL/BIT</div>
+        <div class="arch-item">Dedup: ROW_NUMBER()</div>
+        <div class="arch-item">Strategy: Truncate + Insert</div>
+        <div class="arch-item">Audit: dwh_create_date, dwh_source</div>
+        <div class="arch-item">Proc: silver.load_silver</div>
+      </div>
+    </div>
+    <div class="arch-arrow">→</div>
+    <div class="arch-layer gold-l">
+      <div class="arch-layer-icon">🥇</div>
+      <div class="arch-layer-name">GOLD</div>
+      <div class="arch-layer-schema gold-schema">schema: gold</div>
+      <div class="arch-layer-desc">Analytics-ready Star Schema. Business logic applied, surrogate keys generated, always fresh — no separate load needed.</div>
+      <div class="arch-layer-items">
+        <div class="arch-item">Type: Views (no physical tables)</div>
+        <div class="arch-item">Keys: Surrogate (ROW_NUMBER)</div>
+        <div class="arch-item">Model: Star Schema (Kimball)</div>
+        <div class="arch-item">Always fresh — reads Silver live</div>
+        <div class="arch-item">6 Dimensions + 3 Facts</div>
+        <div class="arch-item">Script: ddl_gold.sql</div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Layer Comparison</h3>
+  <table>
+    <thead><tr><th>Property</th><th>🥉 Bronze</th><th>🥈 Silver</th><th>🥇 Gold</th></tr></thead>
+    <tbody>
+      <tr><td>Object type</td><td>Tables</td><td>Tables</td><td>Views</td></tr>
+      <tr><td>Data types</td><td>All NVARCHAR</td><td>Typed (INT, DATE, DECIMAL, BIT)</td><td>Inherited from Silver</td></tr>
+      <tr><td>Transformations</td><td>None — raw as-is</td><td>Cast, trim, dedup, validate</td><td>Joins, surrogate keys, business logic</td></tr>
+      <tr><td>Deduplication</td><td>No</td><td>Yes — ROW_NUMBER() OVER PARTITION</td><td>N/A (views)</td></tr>
+      <tr><td>Load strategy</td><td>Truncate + BULK INSERT</td><td>Truncate + INSERT SELECT</td><td>Always fresh (no load)</td></tr>
+      <tr><td>Surrogate keys</td><td>No</td><td>No — source IDs kept</td><td>Yes — ROW_NUMBER() generated</td></tr>
+      <tr><td>Audience</td><td>Data engineers</td><td>Data engineers / QA</td><td>Analysts / BI tools</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- SECTION 3: DATA FLOW                                       -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<section id="dataflow">
+  <h2><span class="section-num">03 — Data Flow</span>End-to-End Pipeline</h2>
+  <p>Data moves from 8 source CSV files through three layers via stored procedures. The full pipeline can be re-run at any time — all loads are idempotent (Truncate + Insert).</p>
+
+  <div class="flow-diagram">
+    <div class="flow-step">
+      <div class="flow-line"><div class="flow-circle" style="background:#555">📁</div><div class="flow-connector"></div></div>
+      <div class="flow-content">
+        <h4>Source Files — 8 CSV Files</h4>
+        <p>01_sales_reps.csv · 02_suppliers.csv · 03_products.csv · 04_accounts.csv · 05_supplier_programs.csv · 06_sales_transactions.csv · 07_rep_quota_actuals.csv · 08_program_attainments.csv — stored in <code>C:\BresCome_DW\datasets\</code></p>
+      </div>
+    </div>
+    <div class="flow-step">
+      <div class="flow-line"><div class="flow-circle" style="background:var(--bronze)">1</div><div class="flow-connector"></div></div>
+      <div class="flow-content">
+        <h4>EXEC bronze.load_bronze — Raw Ingestion</h4>
+        <p>BULK INSERT reads CSVs into bronze tables. All columns loaded as NVARCHAR. <code>dwh_create_date = GETDATE()</code> stamped on each row. Truncate + Insert strategy ensures clean reload every run.</p>
+      </div>
+    </div>
+    <div class="flow-step">
+      <div class="flow-line"><div class="flow-circle" style="background:var(--silver)">2</div><div class="flow-connector"></div></div>
+      <div class="flow-content">
+        <h4>EXEC silver.load_silver — ETL Layer 1</h4>
+        <p>Reads from bronze, applies: TRY_CAST for type safety · LTRIM/RTRIM on all strings · CASE standardization for channel/status values · ROW_NUMBER() deduplication per natural key · COALESCE for null handling · Derived columns (performance_flag, is_valid). Truncate + Insert into silver tables.</p>
+      </div>
+    </div>
+    <div class="flow-step">
+      <div class="flow-line"><div class="flow-circle" style="background:var(--gold)">3</div><div class="flow-connector"></div></div>
+      <div class="flow-content">
+        <h4>ddl_gold.sql — Star Schema Views</h4>
+        <p>CREATE OR REPLACE VIEW statements build 6 dimension views and 3 fact views on top of silver. Surrogate keys via ROW_NUMBER(). Business logic (price_tier, origin_type, gap_to_goal, bonus_missed_usd). No physical load — views always read from current silver data.</p>
+      </div>
+    </div>
+    <div class="flow-step">
+      <div class="flow-line"><div class="flow-circle" style="background:var(--teal)">✓</div></div>
+      <div class="flow-content">
+        <h4>Power BI / Tableau — Analytics</h4>
+        <p>Connect directly to <code>BresCome_DW</code> · schema: <code>gold</code>. All 9 objects (6 dims + 3 facts) are immediately available. Set relationships in Power BI using surrogate keys (rep_key, account_key, product_key, supplier_key, program_key).</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>Source-to-Target Mapping</h3>
+  <table>
+    <thead><tr><th>Source CSV</th><th>Bronze Table</th><th>Silver Table</th><th>Gold Object(s)</th><th>Rows</th></tr></thead>
+    <tbody>
+      <tr><td><code>01_sales_reps.csv</code></td><td><code>bronze.sales_reps</code></td><td><code>silver.sales_reps</code></td><td><code>gold.dim_reps</code> · <code>gold.fact_quota</code></td><td>15</td></tr>
+      <tr><td><code>02_suppliers.csv</code></td><td><code>bronze.suppliers</code></td><td><code>silver.suppliers</code></td><td><code>gold.dim_suppliers</code></td><td>15</td></tr>
+      <tr><td><code>03_products.csv</code></td><td><code>bronze.products</code></td><td><code>silver.products</code></td><td><code>gold.dim_products</code></td><td>25</td></tr>
+      <tr><td><code>04_accounts.csv</code></td><td><code>bronze.accounts</code></td><td><code>silver.accounts</code></td><td><code>gold.dim_accounts</code></td><td>185</td></tr>
+      <tr><td><code>05_supplier_programs.csv</code></td><td><code>bronze.supplier_programs</code></td><td><code>silver.supplier_programs</code></td><td><code>gold.dim_programs</code> · <code>gold.fact_attainment</code></td><td>173</td></tr>
+      <tr><td><code>06_sales_transactions.csv</code></td><td><code>bronze.sales_transactions</code></td><td><code>silver.sales_transactions</code></td><td><code>gold.fact_sales</code></td><td>15,000</td></tr>
+      <tr><td><code>07_rep_quota_actuals.csv</code></td><td><code>bronze.rep_quota_actuals</code></td><td><code>silver.rep_quota_actuals</code></td><td><code>gold.fact_quota</code></td><td>360</td></tr>
+      <tr><td><code>08_program_attainments.csv</code></td><td><code>bronze.program_attainments</code></td><td><code>silver.program_attainments</code></td><td><code>gold.fact_attainment</code></td><td>519</td></tr>
+      <tr><td><em>Computed (no source)</em></td><td>—</td><td>—</td><td><code>gold.dim_date</code></td><td>730</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- SECTION 4: STAR SCHEMA                                     -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<section id="starschema">
+  <h2><span class="section-num">04 — Star Schema</span>Gold Layer Data Model</h2>
+  <p>The Gold layer implements a Star Schema (Kimball methodology). Three fact tables sit at the centre, each surrounded by conformed dimensions. All dimension views carry surrogate keys for BI tool compatibility.</p>
+
+  <div class="schema-grid">
+
+    <!-- dim_reps -->
+    <div class="schema-table">
+      <div class="schema-header dim-h">dim_reps <span class="schema-badge dim-badge">DIM</span></div>
+      <div class="schema-field pk"><span>rep_key</span><span class="field-type">BIGINT SK</span></div>
+      <div class="schema-field fk"><span>rep_src_id</span><span class="field-type">INT</span></div>
+      <div class="schema-field"><span>rep_name</span><span class="field-type">NVARCHAR</span></div>
+      <div class="schema-field"><span>division</span><span class="field-type">NVARCHAR</span></div>
+      <div class="schema-field"><span>channel</span><span class="field-type">NVARCHAR</span></div>
+      <div class="schema-field"><span>hire_date</span><span class="field-type">DATE</span></div>
+      <div class="schema-field"><span>years_tenure</span><span class="field-type">INT derived</span></div>
+    </div>
+
+    <!-- dim_accounts -->
+    <div class="schema-table">
+      <div class="schema-header dim-h">dim_accounts <span class="schema-badge dim-badge">DIM</span></div>
+      <div class="schema-field pk"><span>account_key</span><span class="field-type">BIGINT SK</span></div>
+      <div class="schema-field fk"><span>account_src_id</span><span class="field-type">INT</span></div>
+      <div class="schema-field"><span>account_name</span><span class="field-type">NVARCHAR</span></div>
+      <div class="schema-field"><span>account_type</span><span class="field-type">NVARCHAR</span></div>
+      <div class="schema-field"><span>channel</span><span class="field-type">NVARCHAR</span></div>
+      <div class="schema-field"><span>town / state</span><span class="field-type">NVARCHAR</span></div>
+      <div class="schema-field"><span>account_status</span><span class="field-type">NVARCHAR derived</span></div>
+    </div>
+
+    <!-- dim_date -->
+    <div class="schema-table">
+      <div class="schema-header dim-h">dim_date <span class="schema-badge dim-badge">DIM</span></div>
+      <div class="schema-field pk"><span>full_date</span><span class="field-type">DATE NK</span></div>
+      <div class="schema-field"><span>date_key</span><span class="field-type">INT YYYYMMDD</span></div>
+      <div class="schema-field"><span>year / month_num</span><span class="field-type">INT</span></div>
+      <div class="schema-field"><span>month_name / short</span><span class="field-type">NVARCHAR</span></div>
+      <div class="schema-field"><span>year_quarter</span><span class="field-type">NVARCHAR</span></div>
+      <div class="schema-field"><span>is_weekend</span><span class="field-type">BIT derived</span></div>
+      <div class="schema-field"><span>season</span><span class="field-type">NVARCHAR derived</span></div>
+    </div>
+
+    <!-- fact_sales (CENTER) -->
+    <div class="schema-table fact" style="grid-column:1/4">
+      <div class="schema-header fact-h">⭐ fact_sales — CORE FACT (15,000 rows) <span class="schema-badge fact-badge">FACT</span></div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr)">
+        <div>
+          <div class="schema-field pk"><span>txn_id</span><span class="field-type">INT DK</span></div>
+          <div class="schema-field fk"><span>rep_key →</span><span class="field-type">dim_reps</span></div>
+          <div class="schema-field fk"><span>account_key →</span><span class="field-type">dim_accounts</span></div>
+          <div class="schema-field fk"><span>product_key →</span><span class="field-type">dim_products</span></div>
+          <div class="schema-field fk"><span>supplier_key →</span><span class="field-type">dim_suppliers</span></div>
+          <div class="schema-field fk"><span>order_date →</span><span class="field-type">dim_date</span></div>
+        </div>
+        <div>
+          <div class="schema-field measure"><span>cases_sold</span><span class="field-type">INT</span></div>
+          <div class="schema-field measure"><span>revenue_usd</span><span class="field-type">DECIMAL</span></div>
+          <div class="schema-field measure"><span>discount_pct</span><span class="field-type">DECIMAL</span></div>
+          <div class="schema-field measure"><span>discount_usd</span><span class="field-type">DECIMAL derived</span></div>
+        </div>
+        <div>
+          <div class="schema-field measure"><span>gross_revenue_usd</span><span class="field-type">DECIMAL derived</span></div>
+          <div class="schema-field measure"><span>revenue_per_case</span><span class="field-type">DECIMAL derived</span></div>
+          <div class="schema-field measure"><span>est_margin_usd</span><span class="field-type">DECIMAL derived</span></div>
+          <div class="schema-field"><span>channel</span><span class="field-type">NVARCHAR</span></div>
+        </div>
+        <div>
+          <div class="schema-field"><span>is_valid</span><span class="field-type">BIT</span></div>
+          <div class="schema-field"><span>dwh_create_date</span><span class="field-type">DATETIME2</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- dim_products -->
+    <div class="schema-table">
+      <div class="schema-header dim-h">dim_products <span class="schema-badge dim-badge">DIM</span></div>
+      <div class="schema-field pk"><span>product_key</span><span class="field-type">BIGINT SK</span></div>
+      <div class="schema-field fk"><span>sku_src_id</span><span class="field-type">INT</span></div>
+      <div class="schema-field"><span>product_name</span><span class="field-type">NVARCHAR</span></div>
+      <div class="schema-field"><span>category</span><span class="field-type">NVARCHAR</span></div>
+      <div class="schema-field"><span>sub_category</span><span class="field-type">NVARCHAR</span></div>
+      <div class="schema-field"><span>price_per_case_usd</span><span class="field-type">DECIMAL</span></div>
+      <div class="schema-field"><span>price_tier</span><span class="field-type">NVARCHAR derived</span></div>
+    </div>
+
+    <!-- dim_suppliers -->
+    <div class="schema-table">
+      <div class="schema-header dim-h">dim_suppliers <span class="schema-badge dim-badge">DIM</span></div>
+      <div class="schema-field pk"><span>supplier_key</span><span class="field-type">BIGINT SK</span></div>
+      <div class="schema-field fk"><span>supplier_src_id</span><span class="field-type">INT</span></div>
+      <div class="schema-field"><span>supplier_name</span><span class="field-type">NVARCHAR</span></div>
+      <div class="schema-field"><span>category</span><span class="field-type">NVARCHAR</span></div>
+      <div class="schema-field"><span>country</span><span class="field-type">NVARCHAR</span></div>
+      <div class="schema-field"><span>origin_type</span><span class="field-type">NVARCHAR derived</span></div>
+    </div>
+
+    <!-- dim_programs -->
+    <div class="schema-table">
+      <div class="schema-header dim-h">dim_programs <span class="schema-badge dim-badge">DIM</span></div>
+      <div class="schema-field pk"><span>program_key</span><span class="field-type">BIGINT SK</span></div>
+      <div class="schema-field fk"><span>program_src_id</span><span class="field-type">INT</span></div>
+      <div class="schema-field"><span>quarter</span><span class="field-type">NVARCHAR</span></div>
+      <div class="schema-field"><span>program_type</span><span class="field-type">NVARCHAR</span></div>
+      <div class="schema-field"><span>goal_value / bonus_usd</span><span class="field-type">DECIMAL</span></div>
+      <div class="schema-field"><span>program_duration_days</span><span class="field-type">INT derived</span></div>
+    </div>
+
+  </div>
+
+  <h3 style="margin-top:28px">Supporting Fact Tables</h3>
+  <table>
+    <thead><tr><th>Fact Table</th><th>Grain</th><th>Key Measures</th><th>Rows</th><th>Joins To</th></tr></thead>
+    <tbody>
+      <tr><td><code>gold.fact_quota</code></td><td>1 row per rep per month</td><td>quota_cases, actual_cases, attainment_pct, ytd_actual_cases, revenue_variance_usd</td><td>360</td><td>dim_reps</td></tr>
+      <tr><td><code>gold.fact_attainment</code></td><td>1 row per rep per program</td><td>goal_value, actual_value, attainment_pct, bonus_earned_usd, gap_to_goal, bonus_missed_usd</td><td>519</td><td>dim_reps, dim_suppliers, dim_programs</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- SECTION 5: NAMING CONVENTIONS                              -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<section id="naming">
+  <h2><span class="section-num">05 — Naming</span>Naming Conventions</h2>
+  <p>Consistent naming across all three layers ensures clarity, traceability, and BI tool compatibility.</p>
+
+  <h3>Schema Names</h3>
+  <table>
+    <thead><tr><th>Schema</th><th>Layer</th><th>Object Type</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td><code>bronze</code></td><td><span class="tag tag-bronze">Bronze</span></td><td>Tables</td><td>Raw ingestion — data as-is from source</td></tr>
+      <tr><td><code>silver</code></td><td><span class="tag tag-silver">Silver</span></td><td>Tables</td><td>Cleansed, typed, deduplicated</td></tr>
+      <tr><td><code>gold</code></td><td><span class="tag tag-gold">Gold</span></td><td>Views</td><td>Analytics-ready star schema</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Table / View Names</h3>
+  <table>
+    <thead><tr><th>Pattern</th><th>Example</th><th>Layer</th><th>Rule</th></tr></thead>
+    <tbody>
+      <tr><td><code>{schema}.{entity}</code></td><td><code>bronze.sales_reps</code></td><td><span class="tag tag-bronze">Bronze</span></td><td>Plural snake_case, mirrors CSV filename</td></tr>
+      <tr><td><code>{schema}.{entity}</code></td><td><code>silver.sales_reps</code></td><td><span class="tag tag-silver">Silver</span></td><td>Same name as bronze — layer indicated by schema only</td></tr>
+      <tr><td><code>gold.dim_{entity}</code></td><td><code>gold.dim_reps</code></td><td><span class="tag tag-gold">Gold</span></td><td>Prefix <code>dim_</code> for dimension views</td></tr>
+      <tr><td><code>gold.fact_{entity}</code></td><td><code>gold.fact_sales</code></td><td><span class="tag tag-gold">Gold</span></td><td>Prefix <code>fact_</code> for fact views</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Column Names</h3>
+  <table>
+    <thead><tr><th>Pattern</th><th>Example</th><th>Where Used</th><th>Rule</th></tr></thead>
+    <tbody>
+      <tr><td><code>{entity}_id</code></td><td><code>rep_id</code></td><td>Bronze + Silver</td><td>Source system natural key — integer</td></tr>
+      <tr><td><code>{entity}_key</code></td><td><code>rep_key</code></td><td>Gold only</td><td>Surrogate key generated by ROW_NUMBER()</td></tr>
+      <tr><td><code>{entity}_src_id</code></td><td><code>rep_src_id</code></td><td>Gold only</td><td>Source ID retained for lineage/debugging</td></tr>
+      <tr><td><code>is_{flag}</code></td><td><code>is_active</code>, <code>is_valid</code>, <code>is_weekend</code></td><td>Silver + Gold</td><td>Boolean columns — BIT type, prefixed <code>is_</code></td></tr>
+      <tr><td><code>dwh_create_date</code></td><td><code>dwh_create_date</code></td><td>All layers</td><td>Audit column — DATETIME2, set to GETDATE() on load</td></tr>
+      <tr><td><code>dwh_source</code></td><td><code>dwh_source</code></td><td>Silver only</td><td>Source table name for lineage tracking</td></tr>
+      <tr><td><code>{measure}_usd</code></td><td><code>revenue_usd</code>, <code>bonus_usd</code></td><td>All layers</td><td>Currency columns suffixed with unit</td></tr>
+      <tr><td><code>{measure}_pct</code></td><td><code>attainment_pct</code>, <code>discount_pct</code></td><td>All layers</td><td>Percentage columns suffixed <code>_pct</code></td></tr>
+      <tr><td><code>{measure}_cases</code></td><td><code>quota_cases</code>, <code>actual_cases</code></td><td>Silver + Gold</td><td>Volume measures suffixed with unit</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Stored Procedure Names</h3>
+  <table>
+    <thead><tr><th>Procedure</th><th>Pattern</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td><code>bronze.load_bronze</code></td><td><code>{schema}.load_{schema}</code></td><td>Loads all bronze tables from CSV</td></tr>
+      <tr><td><code>silver.load_silver</code></td><td><code>{schema}.load_{schema}</code></td><td>ETL from bronze → silver (all 8 tables)</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- SECTION 6: DATA CATALOG                                    -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<section id="catalog">
+  <h2><span class="section-num">06 — Catalog</span>Gold Layer Data Catalog</h2>
+  <p>Column-level documentation for all Gold layer objects. These are the columns analysts and BI tools consume directly.</p>
+
+  <!-- dim_reps -->
+  <div class="catalog-table-card">
+    <div class="catalog-table-header">
+      <div class="catalog-table-icon" style="background:#e8f5f0;color:#1e6b5e">👤</div>
+      <div>
+        <div class="catalog-table-name">gold.dim_reps</div>
+        <div style="font-size:11px;color:#888">Dimension · 15 rows · One row per sales representative</div>
+      </div>
+      <div class="catalog-table-meta"><span class="tag tag-gold">Dimension</span></div>
+    </div>
+    <div class="catalog-field" style="background:#f9f9f9;font-weight:600;font-size:11px;color:#888"><span>Column</span><span>Type</span><span>Key</span><span>Description</span></div>
+    <div class="catalog-field"><span class="field-name-col">rep_key</span><span class="field-type-col">BIGINT</span><span class="field-key-col" style="color:var(--gold)">SK</span><span class="field-desc-col">Surrogate key — generated by ROW_NUMBER() OVER (ORDER BY rep_id). Use this to join fact tables to this dimension in Power BI.</span></div>
+    <div class="catalog-field"><span class="field-name-col">rep_src_id</span><span class="field-type-col">INT</span><span class="field-key-col" style="color:#888">SRC</span><span class="field-desc-col">Original rep_id from the source system. Retained for debugging and lineage tracing.</span></div>
+    <div class="catalog-field"><span class="field-name-col">rep_name</span><span class="field-type-col">NVARCHAR</span><span class="field-key-col"></span><span class="field-desc-col">Full name of the sales representative (e.g. "James Caruso").</span></div>
+    <div class="catalog-field"><span class="field-name-col">division</span><span class="field-type-col">NVARCHAR</span><span class="field-key-col"></span><span class="field-desc-col">Sales territory division. Values: North Division, South Division, Fairfield County, Worldwide Wines, Spirits Division.</span></div>
+    <div class="catalog-field"><span class="field-name-col">channel</span><span class="field-type-col">NVARCHAR</span><span class="field-key-col"></span><span class="field-desc-col">Sales channel the rep covers. Values: "On-Premise" (bars/restaurants) or "Off-Premise" (retail/liquor stores).</span></div>
+    <div class="catalog-field"><span class="field-name-col">hire_date</span><span class="field-type-col">DATE</span><span class="field-key-col"></span><span class="field-desc-col">Date the representative was hired. Used for tenure analysis.</span></div>
+    <div class="catalog-field"><span class="field-name-col">years_tenure</span><span class="field-type-col">INT</span><span class="field-key-col">DRV</span><span class="field-desc-col">Derived column: DATEDIFF(YEAR, hire_date, GETDATE()). Number of full years of employment.</span></div>
+    <div class="catalog-field"><span class="field-name-col">email</span><span class="field-type-col">NVARCHAR</span><span class="field-key-col"></span><span class="field-desc-col">Work email address in lowercase (normalized in Silver layer).</span></div>
+  </div>
+
+  <!-- fact_sales -->
+  <div class="catalog-table-card">
+    <div class="catalog-table-header">
+      <div class="catalog-table-icon" style="background:#fff0f2;color:var(--wine)">📦</div>
+      <div>
+        <div class="catalog-table-name">gold.fact_sales</div>
+        <div style="font-size:11px;color:#888">Fact · ~15,000 rows · One row per sales transaction · PRIMARY FACT TABLE</div>
+      </div>
+      <div class="catalog-table-meta"><span class="tag" style="background:#fff0f2;color:var(--wine)">Fact</span></div>
+    </div>
+    <div class="catalog-field" style="background:#f9f9f9;font-weight:600;font-size:11px;color:#888"><span>Column</span><span>Type</span><span>Key</span><span>Description</span></div>
+    <div class="catalog-field"><span class="field-name-col">txn_id</span><span class="field-type-col">INT</span><span class="field-key-col" style="color:#888">DK</span><span class="field-desc-col">Degenerate dimension key — transaction identifier. No separate dimension table exists for transactions.</span></div>
+    <div class="catalog-field"><span class="field-name-col">rep_key</span><span class="field-type-col">BIGINT</span><span class="field-key-col" style="color:var(--blue)">FK</span><span class="field-desc-col">Foreign key → gold.dim_reps.rep_key</span></div>
+    <div class="catalog-field"><span class="field-name-col">account_key</span><span class="field-type-col">BIGINT</span><span class="field-key-col" style="color:var(--blue)">FK</span><span class="field-desc-col">Foreign key → gold.dim_accounts.account_key</span></div>
+    <div class="catalog-field"><span class="field-name-col">product_key</span><span class="field-type-col">BIGINT</span><span class="field-key-col" style="color:var(--blue)">FK</span><span class="field-desc-col">Foreign key → gold.dim_products.product_key</span></div>
+    <div class="catalog-field"><span class="field-name-col">supplier_key</span><span class="field-type-col">BIGINT</span><span class="field-key-col" style="color:var(--blue)">FK</span><span class="field-desc-col">Foreign key → gold.dim_suppliers.supplier_key</span></div>
+    <div class="catalog-field"><span class="field-name-col">order_date</span><span class="field-type-col">DATE</span><span class="field-key-col" style="color:var(--blue)">FK</span><span class="field-desc-col">Transaction date. Join to gold.dim_date.full_date for calendar analysis.</span></div>
+    <div class="catalog-field"><span class="field-name-col">cases_sold</span><span class="field-type-col">INT</span><span class="field-key-col" style="color:var(--teal)">M</span><span class="field-desc-col">Number of cases sold in this transaction. Core volume measure.</span></div>
+    <div class="catalog-field"><span class="field-name-col">revenue_usd</span><span class="field-type-col">DECIMAL</span><span class="field-key-col" style="color:var(--teal)">M</span><span class="field-desc-col">Net revenue after discount. Primary revenue measure.</span></div>
+    <div class="catalog-field"><span class="field-name-col">discount_pct</span><span class="field-type-col">DECIMAL</span><span class="field-key-col" style="color:var(--teal)">M</span><span class="field-desc-col">Discount percentage applied (0–100). 0 = no discount.</span></div>
+    <div class="catalog-field"><span class="field-name-col">gross_revenue_usd</span><span class="field-type-col">DECIMAL</span><span class="field-key-col">DRV</span><span class="field-desc-col">Derived: cases_sold × list price before discount.</span></div>
+    <div class="catalog-field"><span class="field-name-col">discount_usd</span><span class="field-type-col">DECIMAL</span><span class="field-key-col">DRV</span><span class="field-desc-col">Derived: gross_revenue_usd × (discount_pct / 100). Dollar value of discount given.</span></div>
+    <div class="catalog-field"><span class="field-name-col">revenue_per_case</span><span class="field-type-col">DECIMAL</span><span class="field-key-col">DRV</span><span class="field-desc-col">Derived: revenue_usd / cases_sold. Average net revenue per case.</span></div>
+    <div class="catalog-field"><span class="field-name-col">estimated_margin_usd</span><span class="field-type-col">DECIMAL</span><span class="field-key-col">DRV</span><span class="field-desc-col">Derived: revenue_usd × 0.30. Proxy for gross margin (assumes 30% margin rate).</span></div>
+    <div class="catalog-field"><span class="field-name-col">channel</span><span class="field-type-col">NVARCHAR</span><span class="field-key-col"></span><span class="field-desc-col">"On-Premise" or "Off-Premise". Denormalized from accounts for fast filtering.</span></div>
+    <div class="catalog-field"><span class="field-name-col">is_valid</span><span class="field-type-col">BIT</span><span class="field-key-col"></span><span class="field-desc-col">Data quality flag set in Silver layer. 1 = valid. 0 = flagged (negative revenue, zero cases, or null date). fact_sales only shows is_valid = 1.</span></div>
+  </div>
+
+  <!-- fact_quota -->
+  <div class="catalog-table-card">
+    <div class="catalog-table-header">
+      <div class="catalog-table-icon" style="background:#e8f5f0;color:var(--teal)">📈</div>
+      <div>
+        <div class="catalog-table-name">gold.fact_quota</div>
+        <div style="font-size:11px;color:#888">Fact · 360 rows · One row per rep per month · Powers rep leaderboards and attainment trends</div>
+      </div>
+      <div class="catalog-table-meta"><span class="tag" style="background:#fff0f2;color:var(--wine)">Fact</span></div>
+    </div>
+    <div class="catalog-field" style="background:#f9f9f9;font-weight:600;font-size:11px;color:#888"><span>Column</span><span>Type</span><span>Key</span><span>Description</span></div>
+    <div class="catalog-field"><span class="field-name-col">rep_key</span><span class="field-type-col">BIGINT</span><span class="field-key-col" style="color:var(--blue)">FK</span><span class="field-desc-col">Foreign key → gold.dim_reps.rep_key</span></div>
+    <div class="catalog-field"><span class="field-name-col">month_year</span><span class="field-type-col">NVARCHAR</span><span class="field-key-col"></span><span class="field-desc-col">Month in 'YYYY-MM' format (e.g. '2024-01'). Grain key for this fact.</span></div>
+    <div class="catalog-field"><span class="field-name-col">quota_cases</span><span class="field-type-col">INT</span><span class="field-key-col" style="color:var(--teal)">M</span><span class="field-desc-col">Monthly case volume target assigned to the rep.</span></div>
+    <div class="catalog-field"><span class="field-name-col">actual_cases</span><span class="field-type-col">INT</span><span class="field-key-col" style="color:var(--teal)">M</span><span class="field-desc-col">Actual cases sold by the rep in the month.</span></div>
+    <div class="catalog-field"><span class="field-name-col">attainment_pct</span><span class="field-type-col">DECIMAL</span><span class="field-key-col" style="color:var(--teal)">M</span><span class="field-desc-col">actual_cases / quota_cases × 100. Core KPI for rep performance.</span></div>
+    <div class="catalog-field"><span class="field-name-col">cases_variance</span><span class="field-type-col">INT</span><span class="field-key-col">DRV</span><span class="field-desc-col">Derived: actual_cases − quota_cases. Positive = above quota.</span></div>
+    <div class="catalog-field"><span class="field-name-col">ytd_actual_cases</span><span class="field-type-col">INT</span><span class="field-key-col">DRV</span><span class="field-desc-col">Running year-to-date actual cases (window function partitioned by rep + year).</span></div>
+    <div class="catalog-field"><span class="field-name-col">ytd_quota_cases</span><span class="field-type-col">INT</span><span class="field-key-col">DRV</span><span class="field-desc-col">Running year-to-date quota (window function partitioned by rep + year).</span></div>
+    <div class="catalog-field"><span class="field-name-col">performance_flag</span><span class="field-type-col">NVARCHAR</span><span class="field-key-col">DRV</span><span class="field-desc-col">Traffic light status: "Achieved" (≥100%), "At Risk" (75–99%), "Behind" (&lt;75%).</span></div>
+  </div>
+
+  <!-- fact_attainment -->
+  <div class="catalog-table-card">
+    <div class="catalog-table-header">
+      <div class="catalog-table-icon" style="background:#fff8e6;color:var(--gold)">🎯</div>
+      <div>
+        <div class="catalog-table-name">gold.fact_attainment</div>
+        <div style="font-size:11px;color:#888">Fact · 519 rows · One row per rep per supplier program · Powers Program Advisor™ equivalent</div>
+      </div>
+      <div class="catalog-table-meta"><span class="tag" style="background:#fff0f2;color:var(--wine)">Fact</span></div>
+    </div>
+    <div class="catalog-field" style="background:#f9f9f9;font-weight:600;font-size:11px;color:#888"><span>Column</span><span>Type</span><span>Key</span><span>Description</span></div>
+    <div class="catalog-field"><span class="field-name-col">rep_key</span><span class="field-type-col">BIGINT</span><span class="field-key-col" style="color:var(--blue)">FK</span><span class="field-desc-col">Foreign key → gold.dim_reps</span></div>
+    <div class="catalog-field"><span class="field-name-col">supplier_key</span><span class="field-type-col">BIGINT</span><span class="field-key-col" style="color:var(--blue)">FK</span><span class="field-desc-col">Foreign key → gold.dim_suppliers</span></div>
+    <div class="catalog-field"><span class="field-name-col">program_key</span><span class="field-type-col">BIGINT</span><span class="field-key-col" style="color:var(--blue)">FK</span><span class="field-desc-col">Foreign key → gold.dim_programs</span></div>
+    <div class="catalog-field"><span class="field-name-col">goal_value</span><span class="field-type-col">DECIMAL</span><span class="field-key-col" style="color:var(--teal)">M</span><span class="field-desc-col">Target set by the supplier (cases, new accounts, placements, or displays).</span></div>
+    <div class="catalog-field"><span class="field-name-col">actual_value</span><span class="field-type-col">DECIMAL</span><span class="field-key-col" style="color:var(--teal)">M</span><span class="field-desc-col">Rep's actual achievement against the program goal.</span></div>
+    <div class="catalog-field"><span class="field-name-col">attainment_pct</span><span class="field-type-col">DECIMAL</span><span class="field-key-col" style="color:var(--teal)">M</span><span class="field-desc-col">actual_value / goal_value × 100.</span></div>
+    <div class="catalog-field"><span class="field-name-col">bonus_earned_usd</span><span class="field-type-col">DECIMAL</span><span class="field-key-col" style="color:var(--teal)">M</span><span class="field-desc-col">Bonus dollars earned (capped at program bonus_usd).</span></div>
+    <div class="catalog-field"><span class="field-name-col">gap_to_goal</span><span class="field-type-col">DECIMAL</span><span class="field-key-col">DRV</span><span class="field-desc-col">Derived: goal_value − actual_value. How far the rep still needs to go.</span></div>
+    <div class="catalog-field"><span class="field-name-col">bonus_missed_usd</span><span class="field-type-col">DECIMAL</span><span class="field-key-col">DRV</span><span class="field-desc-col">Derived: program bonus_usd − bonus_earned_usd. Money left on the table.</span></div>
+    <div class="catalog-field"><span class="field-name-col">status</span><span class="field-type-col">NVARCHAR</span><span class="field-key-col"></span><span class="field-desc-col">"Achieved" | "At Risk" | "Behind". Traffic light for dashboard visuals.</span></div>
+    <div class="catalog-field"><span class="field-name-col">status_sort_order</span><span class="field-type-col">INT</span><span class="field-key-col">DRV</span><span class="field-desc-col">Derived: 1=Achieved, 2=At Risk, 3=Behind. Enables correct sort order in BI tools.</span></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- SECTION 7: QUALITY CHECKS                                  -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<section id="quality">
+  <h2><span class="section-num">07 — Quality</span>Data Quality Checks</h2>
+  <p>Run <code>quality_checks_silver.sql</code> after every <code>EXEC silver.load_silver</code>. All queries should return 0 rows (or pass conditions listed below).</p>
+
+  <div class="check-grid">
+    <div class="check-card">
+      <h4>🔍 Section 1 — NULL / Missing Keys</h4>
+      <div class="check-item">NULL rep_id in silver.sales_reps = 0</div>
+      <div class="check-item">NULL txn_date in silver.sales_transactions = 0</div>
+      <div class="check-item">NULL / zero revenue_usd in transactions = 0</div>
+      <div class="check-item">NULL price_per_case_usd in products = 0</div>
+      <div class="check-item">NULL goal_value or bonus_usd in programs = 0</div>
+    </div>
+    <div class="check-card">
+      <h4>🔍 Section 2 — Duplicate Keys</h4>
+      <div class="check-item">Duplicate rep_ids in silver.sales_reps = 0</div>
+      <div class="check-item">Duplicate txn_ids in transactions = 0</div>
+      <div class="check-item">Duplicate sku_ids in products = 0</div>
+      <div class="check-item">Duplicate rep+month in quota table = 0</div>
+    </div>
+    <div class="check-card">
+      <h4>📅 Section 3 — Date Validation</h4>
+      <div class="check-item">Transactions outside 2024–2025 range = 0</div>
+      <div class="check-item">Programs with start_date > end_date = 0</div>
+      <div class="check-item">Reps with hire_date in the future = 0</div>
+    </div>
+    <div class="check-card">
+      <h4>✅ Section 4 — Standardization</h4>
+      <div class="check-item">Channel values = only "On-Premise" or "Off-Premise"</div>
+      <div class="check-item">Supplier categories = Wine / Spirits / Wine & Spirits</div>
+      <div class="check-item">performance_flag = Achieved / At Risk / Behind only</div>
+      <div class="check-item">Attainment status = same 3 values only</div>
+    </div>
+    <div class="check-card">
+      <h4>🔗 Section 5 — Referential Integrity</h4>
+      <div class="check-item">is_valid = 0 transactions logged and reviewed</div>
+      <div class="check-item">Orphan transactions (rep not in sales_reps) = 0</div>
+      <div class="check-item">Orphan accounts (rep not in sales_reps) = 0</div>
+      <div class="check-item">Attainment pct matches actual/goal ratio (±1%)</div>
+    </div>
+    <div class="check-card">
+      <h4>📊 Section 6 — Row Count Validation</h4>
+      <div class="check-item">silver.sales_reps = 15</div>
+      <div class="check-item">silver.suppliers = 15</div>
+      <div class="check-item">silver.products = 25</div>
+      <div class="check-item">silver.accounts = 185</div>
+      <div class="check-item">silver.sales_transactions = 15,000</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- SECTION 8: RUN ORDER                                       -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<section id="runorder">
+  <h2><span class="section-num">08 — Run Order</span>How to Run the Pipeline</h2>
+  <p>Run scripts in this exact order. Steps 1–2 are one-time setup. Steps 3–5 are the repeatable pipeline.</p>
+
+  <div class="run-steps">
+    <div class="run-step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <h4>One-Time: Create Database and Schemas</h4>
+        <p>Run <code>init_database.sql</code> — creates BresCome_DW database with bronze, silver, and gold schemas.</p>
+        <pre>-- Run once
+exec init_database.sql</pre>
+      </div>
+    </div>
+    <div class="run-step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h4>One-Time: Create All Tables and Views</h4>
+        <p>Run DDL scripts to create all physical tables and Gold views.</p>
+        <pre>exec scripts/bronze/ddl_bronze.sql
+exec scripts/silver/ddl_silver.sql
+exec scripts/gold/ddl_gold.sql        -- includes fixed dim_date</pre>
+      </div>
+    </div>
+    <div class="run-step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <h4>Load Bronze — Raw Ingestion</h4>
+        <p>Place 8 CSV files in <code>C:\BresCome_DW\datasets\</code>. Grant NT Service\MSSQL$SQLEXPRESS01 Read permission on that folder. Then run:</p>
+        <pre>EXEC bronze.load_bronze;</pre>
+      </div>
+    </div>
+    <div class="run-step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <h4>Load Silver — ETL Layer 1</h4>
+        <p>Transforms bronze into typed, cleansed, validated silver tables.</p>
+        <pre>EXEC silver.load_silver;</pre>
+      </div>
+    </div>
+    <div class="run-step">
+      <div class="step-num">5</div>
+      <div class="step-body">
+        <h4>Validate Silver</h4>
+        <p>Run quality checks. All checks should return 0 rows / expected values.</p>
+        <pre>-- Run quality_checks_silver.sql manually in SSMS</pre>
+      </div>
+    </div>
+    <div class="run-step">
+      <div class="step-num">6</div>
+      <div class="step-body">
+        <h4>Query Gold — Analytics Ready</h4>
+        <p>Gold views are always fresh (no load step needed). Connect Power BI to BresCome_DW → schema: gold.</p>
+        <pre>SELECT * FROM gold.fact_sales;
+SELECT * FROM gold.dim_reps;
+SELECT * FROM gold.fact_quota;
+SELECT * FROM gold.fact_attainment;</pre>
+      </div>
+    </div>
+  </div>
+
+  <h3>Complete File Inventory</h3>
+  <table>
+    <thead><tr><th>File</th><th>Purpose</th><th>Run When</th></tr></thead>
+    <tbody>
+      <tr><td><code>init_database.sql</code></td><td>Create BresCome_DW database + 3 schemas</td><td>Once</td></tr>
+      <tr><td><code>bronze/ddl_bronze.sql</code></td><td>Create 8 bronze tables (all NVARCHAR)</td><td>Once</td></tr>
+      <tr><td><code>bronze/proc_load_bronze.sql</code></td><td>Create bronze.load_bronze stored procedure</td><td>Once</td></tr>
+      <tr><td><code>silver/ddl_silver.sql</code></td><td>Create 8 silver tables (typed)</td><td>Once</td></tr>
+      <tr><td><code>silver/proc_load_silver.sql</code></td><td>Create silver.load_silver stored procedure</td><td>Once</td></tr>
+      <tr><td><code>silver/quality_checks_silver.sql</code></td><td>15 validation queries for Silver layer</td><td>After every silver load</td></tr>
+      <tr><td><code>gold/ddl_gold.sql</code></td><td>Create all 9 Gold views (6 dims + 3 facts)</td><td>Once (or after schema changes)</td></tr>
+      <tr><td><code>EXEC bronze.load_bronze</code></td><td>Load raw CSV data into bronze tables</td><td>Every refresh cycle</td></tr>
+      <tr><td><code>EXEC silver.load_silver</code></td><td>ETL: bronze → silver (all 8 tables)</td><td>After every bronze load</td></tr>
+    </tbody>
+  </table>
+</section>
+</div>
+
+<footer>
+  BresCome Barton Data Warehouse — Built with SQL Server · Medallion Architecture · Kimball Star Schema<br>
+  Database: BresCome_DW · Server: SQLEXPRESS01 · Schemas: bronze · silver · gold
+</footer>
+
+</body>
+</html>
